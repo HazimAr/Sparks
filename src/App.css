@@ -1,28 +1,125 @@
-
+/* This is called orginization TO FUCKING ORGINIZE. PUT THE RIGHT THINGS 
+IN THE RIGHT THINGS. Name CSS classNames Accordingly */
 /*    All    */
 
-.App {
+.theme-light {
+  --color-primary: #292929;
+  --color-secondary: #fbfbfd;
+  --color-accent:#ffffff;
+  --font-color: #ffffff;
+  color:white;
+  --font-color-o: #000000;
+  --card-color: rgb(255, 255, 255);
+  background-color: #171b26;
+}
+.theme-dark {
+  --color-primary: #212224;
+  --color-secondary: #333333;
+  --color-accent: #171717;
+  --font-color: #ffffff;
+  --card-color: rgb(87, 87, 87);
+  background-color: #171b26;
+}
+
+.body {
   text-align: center;
 }
+
 /*    /All    */
 
 
 /*    NavBar    */
+header {
+  height:80px;
+  background-color: rgb(23, 27, 38, 0.8);
+  border-bottom: solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 2px;
+}
+.nav-link-div {
+  display:flex;
+  width:100%;
+  margin-left:auto;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 100%; 
+}
+.nav-link {
+  text-decoration: none;
+  color:white;
+  margin:auto 3%;
+  transition: all ease-in-out 0.3s;
+  display:flex;
+  font-size: 20px;
+}
+.nav-link:hover {
+  color:red;
+}
+.nav-name {
+  text-decoration: none;
+  color:white;
+  margin:auto;
+  font-size: 30px;
+  transition: all ease-in-out 0.3s;
+  display:flex;
+  align-self: flex-start;
+}
+@media screen and (max-width:1000px) {
 
-
-
+}
 /*    /NavBar    */
 
 /*    Home    */
 
-
-
+.home-slideshow-image {
+  width:100%;
+  height: 800px;
+}
+.home-body-div {
+  height: 1000px;
+}
 /*    /Home    */
 
 
 /*    Footer    */
 
-
+footer {
+  background-color: rgb(23, 27, 38, 0.8);
+  border-top: solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 2px;
+  padding: 100px 0px;
+}
+.footer-content-div {
+  width:50%;
+  margin:auto;
+  display:flex;
+  padding-bottom: 20px;
+  border-bottom: solid;
+  border-color: rgb(221, 221, 221);
+  border-width: 1px;
+}
+.footer-content {
+  margin:auto;
+}
+.footer-header {
+  font-size: 20px;
+  color:rgb(172, 172, 172);
+}
+.footer-socials-div {
+  width:fit-content;
+  margin:auto;
+  display:flex;
+}
+.footer-socials {
+  width:40px;
+  display: inline-block;
+  margin:20px 40px;
+  border-radius: 10%;
+}
+.footer-copyright {
+  text-align: center;
+}
 
 /*    Footer    */
 
