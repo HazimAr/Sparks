@@ -49,7 +49,7 @@ header {
   height:80px;
   background-color: rgb(23, 27, 38, 0.8);
   border-bottom: solid;
-  border-color: rgb(255, 255, 255);
+  border-color: rgb(75, 78, 87);
   border-width: 2px;
 }
 .nav-link-div {
@@ -112,7 +112,7 @@ footer {
   display:flex;
   padding-bottom: 20px;
   border-bottom: solid;
-  border-color: rgb(221, 221, 221);
+  border-color: rgb(75, 78, 87);
   border-width: 1px;
 }
 .footer-content {
