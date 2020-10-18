@@ -24,7 +24,23 @@ IN THE RIGHT THINGS. Name CSS classNames Accordingly */
 .body {
   text-align: center;
 }
-
+::selection {
+  background: #00ffbf; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #00ffbf; /* Gecko Browsers */
+}
+body::-webkit-scrollbar {
+  width: 1em;
+}
+body::-webkit-scrollbar-track {
+  background-color: rgb(185, 185, 185);
+  border-radius: 0px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(119, 119, 119);
+  border-radius: 60px;
+}
 /*    /All    */
 
 
