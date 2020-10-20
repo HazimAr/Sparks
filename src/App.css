@@ -49,10 +49,6 @@ body::-webkit-scrollbar-thumb {
 }
 /*    /All    */
 
-h1{
-  font-size:1px;
-}
-
 /*    NavBar    */
 header {
   width:100%;
@@ -162,14 +158,13 @@ footer {
   padding: 100px 0px;
 }
 .footer-content-div {
-  width:50%;
+  width:30%;
   margin:auto;
   display:flex;
   padding-bottom: 20px;
   border-bottom: solid;
   border-color: rgb(75, 78, 87);
   border-width: 1px;
-  position: center;
   text-align: center;
 }
 .footer-content {
@@ -194,8 +189,6 @@ footer {
   text-align: center;
 }
 
-/*   Email stuff   */
-
 a.footer-email{
   text-decoration: none;
 }
@@ -208,8 +201,6 @@ a.footer-email:visited{
 a.footer-email:hover{
   color: green;
 }
-
-/*   Email stuff   */
 
 /*    Footer    */
 
