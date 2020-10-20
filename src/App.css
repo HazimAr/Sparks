@@ -22,6 +22,12 @@ IN THE RIGHT THINGS. Name CSS classNames Accordingly */
 }
 
 .body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
   text-align: center;
 }
 ::selection {
@@ -46,11 +52,23 @@ body::-webkit-scrollbar-thumb {
 
 /*    NavBar    */
 header {
+  width:100%;
+  position: fixed;
   height:80px;
   background-color: rgb(23, 27, 38, 0.8);
   border-bottom: solid;
   border-color: rgb(75, 78, 87);
   border-width: 2px;
+}
+
+.content {
+  padding: 16px;
+}
+
+
+
+.sticky + .content {
+  padding-top: 102px;
 }
 .nav-link-div {
   display:flex;
@@ -98,9 +116,36 @@ header {
 
 /*    /Contact    */
 
-.form-group{
-  margin-left: 50%;
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
+
+input[type=submit] {
+  width: fit-content;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px auto;
+  border: none;
+  border-radius: 4px;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  
+}
+form {
+  width:30%;
+  margin:auto;
+}
+
 
 /*    /Contact    */
 
@@ -110,7 +155,7 @@ header {
 footer {
   background-color: rgb(23, 27, 38, 0.8);
   border-top: solid;
-  border-color: rgb(255, 255, 255);
+  border-color: rgb(75, 78, 87);
   border-width: 2px;
   padding: 100px 0px;
 }
