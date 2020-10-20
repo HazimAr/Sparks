@@ -36,9 +36,9 @@ const Footer = () => {
 
                 </div>
                 <div className='footer-socials-div'>
-                   <a href='https://www.facebook.com/'><img src={facebook} alt='' className='footer-socials' /></a>
-                   <a href='https://www.instagram.com/'><img src={insta} alt='' className='footer-socials' /></a>
-                   <a href='https://www.youtube.com/'><img src={youtube} alt='' className='footer-socials' /></a>
+                   <a href='https://www.facebook.com/SparksVBCLV'><img src={facebook} alt='' className='footer-socials' /></a>
+                   <a href='https://www.instagram.com/sparks_vbc_lv/'><img src={insta} alt='' className='footer-socials' /></a>
+                   <a href='https://www.youtube.com/channel/UCrUowRgcYRZif4HXd9RgO4A'><img src={youtube} alt='' className='footer-socials' /></a>
 
                 </div>
                 <p className='footer-copyright'>© 2020 Sparks Volleyball Club</p>
