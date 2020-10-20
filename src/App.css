@@ -49,6 +49,9 @@ body::-webkit-scrollbar-thumb {
 }
 /*    /All    */
 
+h1{
+  font-size:1px;
+}
 
 /*    NavBar    */
 header {
