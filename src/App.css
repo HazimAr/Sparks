@@ -64,8 +64,6 @@ header {
   padding: 16px;
 }
 
-
-
 .sticky + .content {
   padding-top: 102px;
 }
