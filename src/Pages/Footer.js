@@ -10,30 +10,18 @@ const Footer = () => {
 
                 <div className='footer-content-div'>
                     <div className='footer-content'>
-                        <p className='footer-header'>LOREM</p>
-                        <p>ipsum</p>
-                        <p>ipsum</p>
-                        <p>ipsum</p>
+                        <p className='footer-header'>Contact Us</p>
+                        <a className='footer-email' href = "mailto:SparksVolleyBallClub@gmail.com">SparksVolleyBallClub@gmail.com</a>
+                        <p>(702) 502-9462</p>
+                        <p>Las Vegas, Nevada</p>
+                        <p>Sparks... The Revolution</p>
                     </div>
-                    <div className='footer-content'>
+                    {/* <div className='footer-content'>
                     <p className='footer-header'>LOREM</p>
                         <p>ipsum</p>
                         <p>ipsum</p>
                         <p>ipsum</p>
-                    </div>
-                    <div className='footer-content'>
-                    <p className='footer-header'>LOREM</p>
-                        <p>ipsum</p>
-                        <p>ipsum</p>
-                        <p>ipsum</p>
-                    </div>
-                    <div className='footer-content'>
-                    <p className='footer-header'>LOREM</p>
-                        <p>ipsum</p>
-                        <p>ipsum</p>
-                        <p>ipsum</p>
-                    </div>
-
+                    </div> */}
                 </div>
                 <div className='footer-socials-div'>
                    <a href='https://www.facebook.com/SparksVBCLV'><img src={facebook} alt='' className='footer-socials' /></a>
@@ -41,7 +29,7 @@ const Footer = () => {
                    <a href='https://www.youtube.com/channel/UCrUowRgcYRZif4HXd9RgO4A'><img src={youtube} alt='' className='footer-socials' /></a>
 
                 </div>
-                <p className='footer-copyright'>© 2020 Sparks Volleyball Club</p>
+                <p className='footer-copyright'>© 2020  Sparks VBC LV</p>
 
             </footer>
         </div>

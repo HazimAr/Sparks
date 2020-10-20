@@ -1,12 +1,13 @@
 import React from 'react'
 
-import placeholder from '../Images/placeholder.png'
+import Transparent from '../Images/Logos/Transparent-White.gif'
+// import placeholder from '../Images/placeholder.png'
 
 const Home = () => {
     return (
         <div className='home-master-div'>
 
-            <img src={placeholder} alt='' className='home-slideshow-image' />
+            <img src={Transparent} alt='' className='home-slideshow-image'/>
 
             <div className='home-body-div'>
 

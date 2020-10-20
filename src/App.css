@@ -107,7 +107,6 @@ header {
 
 .home-slideshow-image {
   width:100%;
-  height: 800px;
 }
 .home-body-div {
   height: 1000px;
@@ -167,6 +166,8 @@ footer {
   border-bottom: solid;
   border-color: rgb(75, 78, 87);
   border-width: 1px;
+  position: center;
+  text-align: center;
 }
 .footer-content {
   margin:auto;
@@ -189,6 +190,23 @@ footer {
 .footer-copyright {
   text-align: center;
 }
+
+/*   Email stuff   */
+
+a.footer-email{
+  text-decoration: none;
+}
+a.footer-email:link{
+  color: blue;
+}
+a.footer-email:visited{
+  color: red;
+}
+a.footer-email:hover{
+  color: green;
+}
+
+/*   Email stuff   */
 
 /*    Footer    */
 
