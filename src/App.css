@@ -11,6 +11,7 @@ IN THE RIGHT THINGS. Name CSS classNames Accordingly */
   --font-color-o: #000000;
   --card-color: rgb(255, 255, 255);
   background-color: #171b26;
+  text-align: center;
 }
 .theme-dark {
   --color-primary: #212224;
@@ -28,7 +29,6 @@ IN THE RIGHT THINGS. Name CSS classNames Accordingly */
 .top-container {
   background-color: #f1f1f1;
   padding: 30px;
-  text-align: center;
 }
 ::selection {
   background: #00ffbf; /* WebKit/Blink Browsers */
@@ -84,9 +84,24 @@ header {
   transition: all ease-in-out 0.3s;
   display:flex;
   font-size: 20px;
+  font-weight: 300;
 }
 .nav-link:hover {
   color:red;
+}
+.nav-link-log {
+  background-color: transparent;
+  color:white;
+  margin:auto 3%;
+  transition: all ease-in-out 0.3s;
+  display:flex;
+  font-size: 20px;
+  border:none;
+  font-weight: 300;
+}
+.nav-link-log:hover {
+  color:red;
+  cursor: pointer;
 }
 .nav-name {
   text-decoration: none;
@@ -105,10 +120,10 @@ header {
 /*    Home    */
 
 .home-slideshow-image {
-  width:100%;
+  height: 1000px;
 }
 .home-body-div {
-  height: 1000px;
+
 }
 /*    /Home    */
 
@@ -123,7 +138,15 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
+textarea {
+  width:100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 input[type=submit] {
   width: fit-content;
   background-color: #4CAF50;
@@ -132,16 +155,16 @@ input[type=submit] {
   margin: 8px auto;
   border: none;
   border-radius: 4px;
-  
 }
-
 input[type=submit]:hover {
   background-color: #45a049;
   
 }
 form {
-  width:30%;
+  width:20%;
   margin:auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 
@@ -165,7 +188,6 @@ footer {
   border-bottom: solid;
   border-color: rgb(75, 78, 87);
   border-width: 1px;
-  text-align: center;
 }
 .footer-content {
   margin:auto;
@@ -184,9 +206,6 @@ footer {
   display: inline-block;
   margin:20px 40px;
   border-radius: 10%;
-}
-.footer-copyright {
-  text-align: center;
 }
 
 a.footer-email{

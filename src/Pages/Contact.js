@@ -6,35 +6,21 @@ import 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
-firebase.initializeApp({
-    apiKey: "AIzaSyA4qr1j20J8yjzQO6UhwxNTPDQXR-KZBPk",
-    authDomain: "sparks-413c9.firebaseapp.com",
-    databaseURL: "https://sparks-413c9.firebaseio.com",
-    projectId: "sparks-413c9",
-    storageBucket: "sparks-413c9.appspot.com",
-    messagingSenderId: "1070946902875",
-    appId: "1:1070946902875:web:f9f5cd4c9621080cb7b07e",
-    measurementId: "G-PRXVXH5T20"
-})
 
-const auth = firebase.auth();
-const firestore = firebase.firestore();
+import auth from '../App';
+import firestore from '../App';
+import sendContact from '../App';
+
 const Contact = () => {
 
-    const messagesRef = firestore.collection('contactMessages'); // this is the chatroom we set up on firebase
     const [formValue, setFormValue] = useState('');
     const [formValueEmail, setFormValueEmail] = useState('');
 
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = function(e) {
         e.preventDefault();
-
-        console.log(formValueEmail, formValue)
-        await messagesRef.add({
-            text: formValueEmail,
-            createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-            message: formValue,
-        });
+        
+        sendContact(formValue, formValueEmail)
         setFormValue('');
         setFormValueEmail('');
     }
