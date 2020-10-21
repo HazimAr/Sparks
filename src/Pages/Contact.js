@@ -7,8 +7,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 
-import sendContact from '../App';
-
+import { messagesRef } from '../App'
 const Contact = () => {
 
     const [formValue, setFormValue] = useState('');
@@ -17,8 +16,15 @@ const Contact = () => {
 
     const handleSubmit = function(e) {
         e.preventDefault();
-        
-        sendContact(formValue, formValueEmail)
+        const send = async (value, email) => {
+            console.log(value, email)
+            await messagesRef.add({
+                email: email,
+                createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+                message: value,
+            });
+        }
+        send(formValue, formValueEmail)
         setFormValue('');
         setFormValueEmail('');
     }
