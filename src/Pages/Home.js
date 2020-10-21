@@ -8,7 +8,6 @@ const Home = () => {
         <div className='home-master-div'>
 
             <img src={Transparent} alt='' className='home-slideshow-image'/>
-
             <div className='home-body-div'>
                 
 

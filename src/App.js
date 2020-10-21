@@ -1,5 +1,6 @@
 import './App.css';
 
+// Page Imports
 import Home from './Pages/Home'
 import NavBar from './Pages/NavBar'
 import Footer from './Pages/Footer'
@@ -8,16 +9,17 @@ import Coaches from './Pages/Coaches'
 import Contact from './Pages/Contact'
 import Media from './Pages/Media'
 import Teams from './Pages/Teams'
+import Register from './Pages/Register'
 
 
 import { BrowserRouter, Route, } from "react-router-dom";
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { useCollectionData } from 'react-firebase-hooks/firestore';
+// import { useAuthState } from 'react-firebase-hooks/auth';
+// import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 
 var FBinit = {
@@ -32,7 +34,8 @@ var FBinit = {
 }
 firebase.initializeApp(FBinit);
 
-const auth = firebase.auth();
+export const auth = firebase.auth();
+
 const firestore = firebase.firestore();
 
 // collections(databases)
@@ -44,7 +47,7 @@ function App() {
     <BrowserRouter>
 
 
-      <div className="theme-light">
+      <div className="theme-dark">
 
         <NavBar />
         <div style={{ height: '80px' }} />
@@ -54,6 +57,7 @@ function App() {
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/media' component={Media} />
         <Route exact path='/teams' component={Teams} />
+        <Route exact path='/register' component={Register} />
         <Footer />
 
       </div>
