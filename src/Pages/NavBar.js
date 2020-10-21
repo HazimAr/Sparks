@@ -1,9 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import React, { useRef, useState } from 'react';
 
-
-
-
 const NavBar = () => {
 
     function signIn() {

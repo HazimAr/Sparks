@@ -10,7 +10,7 @@ IN THE RIGHT THINGS. Name CSS classNames Accordingly */
   color:white;
   --font-color-o: #000000;
   --card-color: rgb(255, 255, 255);
-  background-color: #171b26;
+  background-color: #000000;
   text-align: center;
 }
 .theme-dark {
@@ -19,7 +19,7 @@ IN THE RIGHT THINGS. Name CSS classNames Accordingly */
   --color-accent: #171717;
   --font-color: #ffffff;
   --card-color: rgb(87, 87, 87);
-  background-color: #171b26;
+  background-color: #000000;
 }
 
 .body {
@@ -54,7 +54,7 @@ header {
   width:100%;
   position: fixed;
   height:80px;
-  background-color: rgb(23, 27, 38, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   border-bottom: solid;
   border-color: rgb(75, 78, 87);
   border-width: 2px;
@@ -172,7 +172,7 @@ form {
 /*    Footer    */
 
 footer {
-  background-color: rgb(23, 27, 38, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   border-top: solid;
   border-color: rgb(75, 78, 87);
   border-width: 2px;
