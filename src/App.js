@@ -36,7 +36,7 @@ const auth = firebase.auth();
 const firestore = firebase.firestore();
 
 // collections(databases)
-const messagesRef = firestore.collection('contactMessages');
+ const messagesRef = firestore.collection('contactMessages');
 
 export const sendContact = async (value, email) => {
   console.log(value, email)

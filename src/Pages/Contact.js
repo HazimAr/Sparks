@@ -7,8 +7,6 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 
-import auth from '../App';
-import firestore from '../App';
 import sendContact from '../App';
 
 const Contact = () => {
