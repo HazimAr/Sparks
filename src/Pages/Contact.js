@@ -1,13 +1,15 @@
+/* eslint-disable no-template-curly-in-string */
 import React, { useRef, useState } from 'react';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { useCollectionData } from 'react-firebase-hooks/firestore';
+// import { useAuthState } from 'react-firebase-hooks/auth';
+// import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 
 import { messagesRef } from '../App'
+var size;
 const Contact = () => {
 
     const [formValue, setFormValue] = useState('');
@@ -16,9 +18,11 @@ const Contact = () => {
 
     const handleSubmit = function(e) {
         e.preventDefault();
+
+    
         const send = async (value, email) => {
             console.log(value, email)
-            await messagesRef.add({
+            await messagesRef.doc(`${email}`).set({
                 email: email,
                 createdAt: firebase.firestore.FieldValue.serverTimestamp(),
                 message: value,
