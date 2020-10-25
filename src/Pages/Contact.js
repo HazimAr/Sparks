@@ -1,5 +1,4 @@
-/* eslint-disable no-template-curly-in-string */
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
@@ -9,7 +8,6 @@ import 'firebase/auth';
 
 
 import { messagesRef } from '../App'
-var size;
 const Contact = () => {
 
     const [formValue, setFormValue] = useState('');
