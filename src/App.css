@@ -162,10 +162,10 @@ form {
 
 /*    Register    */
 
-.placeholder{
-  margin-top: 1000px;
+.register-form{
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-
 
 /*    /Register    */
 
@@ -206,14 +206,14 @@ footer {
   border-radius: 10%;
 }
 
-a.footer-email{
+a.footer-links{
   text-decoration: none;
   font-style: italic;
 }
-a.footer-email:link{
+a.footer-links:link{
   color: #636363;
 }
-a.footer-email:hover{
+a.footer-links:hover{
   color: rgb(255, 255, 255);
 }
 

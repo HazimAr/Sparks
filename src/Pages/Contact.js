@@ -12,26 +12,31 @@ const Contact = () => {
 
     const [formValue, setFormValue] = useState('');
     const [formValueEmail, setFormValueEmail] = useState('');
-
+    const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
     const handleSubmit = function(e) {
         e.preventDefault();
 
-    
+
         const send = async (value, email) => {
-            console.log(value, email)
+
+            if (re.test(email) && email !== '') {
             await messagesRef.doc(`${email}`).set({
-                email: email,
-                createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-                message: value,
-            });
+                    email: email,
+                    createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+                    message: value,
+                });
+     } else {
+         alert('Enter a valid Email Address')
+     }
+                
         }
+    
+    
         send(formValue, formValueEmail)
         setFormValue('');
         setFormValueEmail('');
-    }
-    
-    
+}
     return (
         <div>
             <form onSubmit={handleSubmit}>
