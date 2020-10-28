@@ -21,33 +21,31 @@ const Contact = () => {
 
     const [formValue, setFormValue] = useState('');
     const [formValueEmail, setFormValueEmail] = useState('');
-    // eslint-disable-next-line no-useless-escape
+    // eslint-disable-next-line no-useless-escape 
     const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    // I really don't know how this works
 
-    const handleSubmit = function (e) {
-        e.preventDefault();
+    const handleSubmit = function (e) { // called onSubmit button
+        e.preventDefault(); // prevents refresh
         const send = async (value, email) => {
 
             email = String(email).toLowerCase();
 
-            if (re.test(email) && email !== '') {
-                await messagesRef.doc(`${email}`).set({
+            if (re.test(email) && email !== '') { // if email is valid
+                await messagesRef.doc(`${email}`).set({ // sends message to server
                     email: email,
                     createdAt: firebase.firestore.FieldValue.serverTimestamp(),
                     message: value,
                 });
+                // resets form values
                 setFormValue('');
                 setFormValueEmail('');
                 valid() // shows user message has sent
-            } else {
+            } else { 
                 inValid() // tells user email is invalid
             }
-
         }
-
-
         send(formValue, formValueEmail)
-        
     }
     return (
         <div>
