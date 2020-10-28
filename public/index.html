@@ -23,6 +23,11 @@
     content="Sparks Volleyball Club is ...(description)" />
 
   <title>Sparks Volleyball Club</title>
+  <style>
+    .footer-header{
+      color: red;
+    }
+  </style>
 </head>
 
 <body>
@@ -33,8 +38,6 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const loadEl = document.querySelector('#load');
-
-
       try {
         let app = firebase.app();
         let features = [

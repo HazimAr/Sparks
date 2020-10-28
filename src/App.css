@@ -11,6 +11,7 @@ IN THE RIGHT THINGS. Name CSS classNames Accordingly */
   --font-color: #ffffff;
   --font-color-o: #000000;
   --background-color: #17161b;
+  --selection-color:white;
   background-color: var(--background-color);
   text-align: center;
   color:white
@@ -23,10 +24,10 @@ IN THE RIGHT THINGS. Name CSS classNames Accordingly */
   padding: 30px;
 }
 ::selection {
-  background: #990000; /* WebKit/Blink Browsers */
+  background: var(--selection-color); /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #ffffff; /* Gecko Browsers */
+  background: var(--selection-color); /* Gecko Browsers */
 }
 body::-webkit-scrollbar {
   width: 1em;
@@ -36,7 +37,7 @@ body::-webkit-scrollbar-track {
   border-radius: 0px;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(119, 119, 119);
+  background-color: rgb(46,44,44);
   border-radius: 60px;
 }
 /*    /All    */
@@ -70,8 +71,9 @@ header {
   height: 100%; 
 }
 .nav-link {
+  
   text-decoration: none;
-  color:white;
+  color:var(--font-color);
   margin:auto 3%;
   transition: all ease-in-out 0.3s;
   display:flex;
@@ -97,7 +99,7 @@ header {
 }
 .nav-name {
   text-decoration: none;
-  color:white;
+  color:var(---font-color);
   margin:auto;
   font-size: 30px;
   transition: all ease-in-out 0.3s;
@@ -106,6 +108,9 @@ header {
 }
 @media screen and (max-width:1000px) {
 
+}
+.nav-header{
+  background-color:rgb(46,44,54,0.4);
 }
 /*    /NavBar    */
 
@@ -177,6 +182,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  resize: none;
 }
 input[type=submit] {
   width: fit-content;
@@ -233,7 +239,7 @@ footer {
 }
 .footer-header {
   font-size: 20px;
-  color:rgb(172, 172, 172);
+  color: var(--font-color);
 }
 .footer-socials-div {
   width:fit-content;
