@@ -23,7 +23,7 @@ const Contact = () => {
     const [formValueEmail, setFormValueEmail] = useState('');
     // eslint-disable-next-line no-useless-escape 
     const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-    // I really don't know how this works
+    //  ^ I really don't know how this works
 
     const handleSubmit = function (e) { // called onSubmit button
         e.preventDefault(); // prevents refresh
