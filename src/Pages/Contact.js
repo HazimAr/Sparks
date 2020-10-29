@@ -23,11 +23,13 @@ const Contact = () => {
 
     const messageSent = () => { // notify user message was sent sucessfully
         //TODO
+        alert('message was sent')
         setUserEmail('')
         setUserMessage('')
     }
     const inValid = () => { // notify user message is inValid
         //TODO
+        alert('invalid email address or message')
     }
 
     const handleSubmit = function (e) {
