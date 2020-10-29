@@ -55,11 +55,12 @@ const Contact = () => {
             <p className='page-title'>Sparks Volleyball Club</p>
             <p className='page-text'>Contact Us</p>
             <form className='contact-form' onSubmit={handleSubmit}>
-                <p style={{ textAlign: 'left' }}>Email *</p>
-                <input type="text" placeholder="Email" onChange={(e) => setUserEmail(e.target.value)} value={userEmail} />
 
                 <p style={{ textAlign: 'left' }}>Name *</p>
                 <input type="text" placeholder="Name" onChange={(e) => setUserName(e.target.value)} value={userName} />
+
+                <p style={{ textAlign: 'left' }}>Email *</p>
+                <input type="text" placeholder="Email" onChange={(e) => setUserEmail(e.target.value)} value={userEmail} />
 
                 <p style={{ textAlign: 'left' }}>Phone Number *</p>
                 <input type="text" placeholder="555-555-5555" onChange={(e) => setUserPhone(e.target.value)} value={userPhone} />
