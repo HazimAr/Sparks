@@ -2,19 +2,18 @@
 IN THE RIGHT THINGS. Name CSS classNames Accordingly */
 /*    All    */
 
-
 /* We really need to do colors */
 .theme-dark {
   --color-primary: #2e2c36;
   --color-secondary: #fbfbfd;
-  --color-accent:#ffffff;
+  --color-accent: #ffffff;
   --font-color: #ffffff;
   --font-color-o: #000000;
   --background-color: #17161b;
-  --selection-color:white;
+  --selection-color: white;
   background-color: var(--background-color);
   text-align: center;
-  color:white
+  color: white;
 }
 .body {
   font-family: Arial, Helvetica, sans-serif;
@@ -37,16 +36,16 @@ body::-webkit-scrollbar-track {
   border-radius: 0px;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(46,44,44);
+  background-color: rgb(46, 44, 44);
   border-radius: 60px;
 }
 /*    /All    */
 
 /*    NavBar    */
 header {
-  width:100%;
+  width: 100%;
   position: fixed;
-  height:80px;
+  height: 80px;
   background-color: 111111;
   border-bottom: solid;
   border-color: rgb(75, 78, 87);
@@ -63,54 +62,52 @@ header {
   padding-top: 102px;
 }
 .nav-link-div {
-  display:flex;
-  width:100%;
-  margin-left:auto;
+  display: flex;
+  width: 100%;
+  margin-left: auto;
   flex-direction: row;
   justify-content: center;
-  height: 100%; 
+  height: 100%;
 }
 .nav-link {
-  
   text-decoration: none;
-  color:var(--font-color);
-  margin:auto 3%;
+  color: var(--font-color);
+  margin: auto 3%;
   transition: all ease-in-out 0.3s;
-  display:flex;
+  display: flex;
   font-size: 20px;
   font-weight: 300;
 }
 .nav-link:hover {
-  color:red;
+  color: red;
 }
 .nav-link-log {
   background-color: transparent;
-  color:white;
-  margin:auto 3%;
+  color: white;
+  margin: auto 3%;
   transition: all ease-in-out 0.3s;
-  display:flex;
+  display: flex;
   font-size: 20px;
-  border:none;
+  border: none;
   font-weight: 300;
 }
 .nav-link-log:hover {
-  color:red;
+  color: red;
   cursor: pointer;
 }
 .nav-name {
   text-decoration: none;
-  color:var(---font-color);
-  margin:auto;
+  color: var(---font-color);
+  margin: auto;
   font-size: 30px;
   transition: all ease-in-out 0.3s;
-  display:flex;
+  display: flex;
   align-self: flex-start;
 }
-@media screen and (max-width:1000px) {
-
+@media screen and (max-width: 1000px) {
 }
-.nav-header{
-  background-color:rgb(46,44,54,0.4);
+.nav-header {
+  background-color: rgb(46, 44, 54, 0.4);
 }
 /*    /NavBar    */
 
@@ -118,7 +115,6 @@ header {
 
 .home-slideshow-image {
   height: 700px;
-  
 }
 .home-body-div {
   position: relative;
@@ -128,7 +124,7 @@ header {
   padding: 100px 0;
 }
 #home-whoAreWe {
- background-color:var(--color-primary);
+  background-color: var(--color-primary);
 }
 #home-signUp {
   background-color: var(--background-color);
@@ -137,18 +133,18 @@ header {
   font-size: 35px;
 }
 hr {
-  width:10%;
-  margin:20px auto;
+  width: 10%;
+  margin: 20px auto;
 }
 .home-paragraph {
-  width:50%;
-  margin:auto;
+  width: 50%;
+  margin: auto;
   font-size: 20px;
-  padding:30px 0;
+  padding: 30px 0;
 }
 .home-button {
   background-color: white;
-  color:var(--font-color-o);
+  color: var(--font-color-o);
   font-size: 25px;
   border-radius: 30px;
   padding: 10px 25px;
@@ -165,7 +161,8 @@ hr {
 
 /*    Contact    */
 
-input[type=text], select {
+input[type="text"],
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -175,7 +172,7 @@ input[type=text], select {
   box-sizing: border-box;
 }
 textarea {
-  width:100%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -184,32 +181,30 @@ textarea {
   box-sizing: border-box;
   resize: none;
 }
-input[type=submit] {
+input[type="submit"] {
   width: fit-content;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 14px 20px;
   margin: 8px auto;
   border: none;
   border-radius: 4px;
 }
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
-  
 }
 form {
-  width:20%;
-  margin:auto;
+  width: 20%;
+  margin: auto;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
 
 /*    /Contact    */
 
 /*    Register    */
 
-.register-form{
+.register-form {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -226,44 +221,42 @@ footer {
   padding: 100px 0px;
 }
 .footer-content-div {
-  width:30%;
-  margin:auto;
-  display:flex;
+  width: 30%;
+  margin: auto;
+  display: flex;
   padding-bottom: 20px;
   border-bottom: solid;
   border-color: rgb(75, 78, 87);
   border-width: 1px;
 }
 .footer-content {
-  margin:auto;
+  margin: auto;
 }
 .footer-header {
   font-size: 20px;
   color: var(--font-color);
 }
 .footer-socials-div {
-  width:fit-content;
-  margin:auto;
-  display:flex;
+  width: fit-content;
+  margin: auto;
+  display: flex;
 }
 .footer-socials {
-  width:40px;
+  width: 40px;
   display: inline-block;
-  margin:20px 40px;
+  margin: 20px 40px;
   border-radius: 10%;
 }
 
-a.footer-links{
+a.footer-links {
   text-decoration: none;
   font-style: italic;
 }
-a.footer-links:link{
+a.footer-links:link {
   color: #636363;
 }
-a.footer-links:hover{
+a.footer-links:hover {
   color: rgb(255, 255, 255);
 }
 
 /*    Footer    */
-
-
