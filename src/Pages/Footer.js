@@ -7,7 +7,6 @@ const Footer = () => {
     return (
         <div>
             <footer>
-
                 <div className='footer-content-div'>
                     <div className='footer-content'>
                         <p className='footer-header'>Contact Us</p>
@@ -15,7 +14,6 @@ const Footer = () => {
                         <p/>
                         <a className='footer-links' href="tel:7025029462">(702) 502-9462</a>
                         <p>Las Vegas, Nevada</p>
-                        <p>Sparks... The Revolution</p>
                     </div>
                     
                 </div>

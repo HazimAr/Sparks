@@ -14,7 +14,7 @@ const NavBar = () => {
 
     return (
         <div>
-            <header>
+            <header className='nav-header'>
                 <div className='nav-link-div'>
                     <NavLink to='/' className='nav-link'>Home</NavLink>
                     <NavLink to='/register' className='nav-link' activeStyle={{ color: "red" }}>Register</NavLink>
