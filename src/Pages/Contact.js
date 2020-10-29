@@ -12,6 +12,9 @@ const Contact = () => {
     const [userEmail, setUserEmail] = useState('');
     const [userMessage, setUserMessage] = useState('')
 
+    const [userName, setUserName] = useState('');
+    const [userPhone, setUserPhone] = useState('')
+
     const [errorMessage, setErrorMessage] = useState(' ')
 
     // eslint-disable-next-line no-useless-escape
@@ -22,14 +25,14 @@ const Contact = () => {
     }
 
     const messageSent = () => { // notify user message was sent sucessfully
-        //TODO
-        alert('message was sent')
+        setErrorMessage('Message Sucessfully')
         setUserEmail('')
+        setUserName('')
+        setUserPhone('')
         setUserMessage('')
     }
     const inValid = () => { // notify user message is inValid
-        //TODO
-        alert('invalid email address or message')
+        setErrorMessage('Invalid Values')
     }
 
     const handleSubmit = function (e) {
@@ -38,12 +41,15 @@ const Contact = () => {
             emailjs.send(config.SERVICE, config.TEMPLATE, {
                 userEmail: userEmail,
                 userMessage: userMessage,
+                userName: userName,
+                userPhone: userPhone,
             });
             messageSent()
         } else {
             inValid()
         }
     }
+
     return (
         <div>
             <p className='page-title'>Sparks Volleyball Club</p>
@@ -51,10 +57,17 @@ const Contact = () => {
             <form className='contact-form' onSubmit={handleSubmit}>
                 <p style={{ textAlign: 'left' }}>Email *</p>
                 <input type="text" placeholder="Email" onChange={(e) => setUserEmail(e.target.value)} value={userEmail} />
+
+                <p style={{ textAlign: 'left' }}>Name *</p>
+                <input type="text" placeholder="Name" onChange={(e) => setUserName(e.target.value)} value={userName} />
+
+                <p style={{ textAlign: 'left' }}>Phone Number *</p>
+                <input type="text" placeholder="555-555-5555" onChange={(e) => setUserPhone(e.target.value)} value={userPhone} />
+
                 <p style={{ textAlign: 'left' }}>Message *</p>
                 <textarea type="text" placeholder="Message" onChange={(e) => setUserMessage(e.target.value)} value={userMessage} style={{ height: '100px' }} />
                 <input type="submit" value="SUBMIT" />
-                <p>{errorMessage}</p>
+                <p>{errorMessage}<br /></p>
             </form>
         </div>
     )
