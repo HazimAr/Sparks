@@ -1,62 +1,58 @@
-import React, { useState } from 'react';
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth';
+import React, { useState } from 'react'
+import emailjs from 'emailjs-com';
+import { init } from 'emailjs-com';
+import { config } from '../config'
 
-// import { useAuthState } from 'react-firebase-hooks/auth';
-// import { useCollectionData } from 'react-firebase-hooks/firestore';
+init("user_dkvZZk4wFtUR8WzHQlJGa");
 
 
-import { messagesRef } from '../App'
+
+
 const Contact = () => {
+    const [userEmail, setUserEmail] = useState('');
+    const [userMessage, setUserMessage] = useState('')
 
-    function inValid() {
-        //TODO show user email is invalid alert is filler
-        alert("Email is Invalid")
-    }
-    function valid() {
-        //TODO Shows user message has been sent alert is filler
-        alert('Message Sent!')
-    }
+    const [errorMessage, setErrorMessage] = useState(' ')
 
-    const [formValue, setFormValue] = useState('');
-    const [formValueEmail, setFormValueEmail] = useState('');
-    // eslint-disable-next-line no-useless-escape 
+    // eslint-disable-next-line no-useless-escape
     const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-    //  ^ I really don't know how this works
 
-    const handleSubmit = function (e) { // called onSubmit button
-        e.preventDefault(); // prevents refresh
-        const send = async (value, email) => {
+    function validateEmail(email) {
+        return re.test(email)
+    }
 
-            email = String(email).toLowerCase();
+    const messageSent = () => { // notify user message was sent sucessfully
+        //TODO
+        setUserEmail('')
+        setUserMessage('')
+    }
+    const inValid = () => { // notify user message is inValid
+        //TODO
+    }
 
-            if (re.test(email) && email !== '') { // if email is valid
-                await messagesRef.doc(`${email}`).set({ // sends message to server
-                    email: email,
-                    createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-                    message: value,
-                });
-                // resets form values
-                setFormValue('');
-                setFormValueEmail('');
-                valid() // shows user message has sent
-            } else { 
-                inValid() // tells user email is invalid
-            }
+    const handleSubmit = function (e) {
+        e.preventDefault()
+        if (validateEmail(userEmail) && userMessage !== '') {
+            emailjs.send(config.SERVICE, config.TEMPLATE, {
+                userEmail: userEmail,
+                userMessage: userMessage,
+            });
+            messageSent()
+        } else {
+            inValid()
         }
-        send(formValue, formValueEmail)
     }
     return (
         <div>
-            <form onSubmit={handleSubmit}>
-                <label for="fname">Email</label>
-                <input type="text" placeholder="Email" onChange={(e) => setFormValueEmail(e.target.value)} value={formValueEmail} />
-
-                <label for="lname">Message</label>
-                <textarea type="text" placeholder="Message" onChange={(e) => setFormValue(e.target.value)} value={formValue} style={{ height: '100px' }} />
-
-                <input type="submit" value="Submit" />
+            <p className='page-title'>Sparks Volleyball Club</p>
+            <p className='page-text'>Contact Us</p>
+            <form className='contact-form' onSubmit={handleSubmit}>
+                <p style={{ textAlign: 'left' }}>Email *</p>
+                <input type="text" placeholder="Email" onChange={(e) => setUserEmail(e.target.value)} value={userEmail} />
+                <p style={{ textAlign: 'left' }}>Message *</p>
+                <textarea type="text" placeholder="Message" onChange={(e) => setUserMessage(e.target.value)} value={userMessage} style={{ height: '100px' }} />
+                <input type="submit" value="SUBMIT" />
+                <p>{errorMessage}</p>
             </form>
         </div>
     )

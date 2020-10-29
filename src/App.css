@@ -159,6 +159,22 @@ hr {
 /*    /Home    */
 
 /*    Contact    */
+.page-title {
+  color:var(--color-accent);
+  font-size: 40px;
+  width:90%;
+  font-weight: 600;
+  margin:auto;
+  padding: 50px 0;
+}
+.page-text {
+  color:var(--color-accent);
+  font-size: 20px;
+  width:90%;
+  font-weight: 600;
+  margin:auto;
+  padding: 50px 0;
+}
 
 input[type=text], select {
   width: 100%;
@@ -168,36 +184,54 @@ input[type=text], select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  font-family: monospace;
+  margin-bottom: 40px;
+  color:white;
+
+  background-color: transparent;
 }
 textarea {
   width:100%;
+  font-family: monospace;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  margin-bottom: 40px;
+  resize: none;
+  color:white;
+  background-color: transparent;
 }
 input[type=submit] {
-  width: fit-content;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
+  background-color: transparent;
+  font-size: 20px;
+  color: var(--color-accent);
+  padding: 20px 50px;
   margin: 8px auto;
-  border: none;
+  border: solid;
+  border-color: var(--color-accent);
+  border-width: 3px;
   border-radius: 4px;
+  transition: all ease-in-out 0.3s;
 }
 input[type=submit]:hover {
-  background-color: #45a049;
-  
+  background-color: var(--color-accent);
+  color:black;
 }
 form {
-  width:20%;
+  width:465px;
   margin:auto;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
+@media screen and (max-width:800px){
+  .contact-form {
+    width:60%
+  }
+}
 
 /*    /Contact    */
 
