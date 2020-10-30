@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import Transparent from '../Images/Logos/Transparent-White.gif'
 // import placeholder from '../Images/placeholder.png'
+import photo from '../Images/photo.png'
 const Home = () => {
     return (
         <div>
@@ -35,10 +36,7 @@ const Home = () => {
 
                     <NavLink to='/register' className='home-button'>Register Now!</NavLink>
                 </div>
-                {// Volleyball Stocklike Image
-                }
-                <img src={Transparent} alt='' className='home-slideshow-image' />
-
+                <img src={photo} alt='' className='home-slideshow-image' />
             </div>
         </div >
     )

@@ -1,7 +1,7 @@
 .theme-dark {
   --color-primary: #1f1f1f;
   --color-mid: gray;
-  --color-accent: red;
+  --color-accent: #eb5454;
   --color-accent-2: blueviolet;
   --color-light: #ffffff;
   --color-dark: #000000;
@@ -109,7 +109,8 @@ header {
 /*    Home    */
 
 .home-slideshow-image {
-  height: 700px;
+  width: 700px;
+  border-radius: 10px;
 }
 #home-dark {
   background-color: var(--color-primary);
@@ -179,6 +180,9 @@ hr {
   padding-top: 100px;
   flex-direction: column-reverse;
 }
+.home-slideshow-image {
+  margin-bottom: 50px;
+  }
 }
 @media screen and (max-width: 850px) {
   .home-div {
@@ -294,12 +298,10 @@ form {
 /*    /Register    */
 
 /*    Waiver    */
-
 .waiver-form {
   margin-top: 100px;
   margin-bottom: 100px;
 }
-
 .waiver-button {
   border: none;
   padding: 15px 32px;
@@ -310,14 +312,11 @@ form {
   margin: 4px 2px;
   cursor: pointer;
 }
-
 /*    /Waiver    */
 
 /*    Footer    */
-
 footer {
-  border-top: solid;
-  border-width: 0px;
+  border-top:0.5px solid var(--color-accent);
   padding: 100px 0px;
   background-color: var(--color-primary);
 }
@@ -325,10 +324,7 @@ footer {
   width: 100%;
   margin: auto;
   display: flex;
-  padding-bottom: 20px;
-  border-bottom: solid;
-  border-color: rgb(75, 78, 87);
-  border-width: 1px;
+ 
 }
 .footer-content {
   margin: auto;
