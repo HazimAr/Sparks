@@ -13,11 +13,11 @@ const Home = () => {
                     <hr />
                     <p className='home-paragraph'>
                         Sparks Volleyball Club is committed to providing an excellent volleyball experience that promotes
-                        <br></br>
+
                         hard work, great attitudes, a genuine respect for the game, a “TEAM” concept at all times,
-                        <br></br>
+
                         and leadership development for each athlete.
-                        <br></br>
+
                         SVBC will provide the maximum opportunity for each athlete to train and compete at their highest level.
                     </p>
                     <NavLink to='/about' className='home-button'>Learn More</NavLink>
