@@ -5,7 +5,7 @@ import Transparent from '../Images/Logos/Transparent-White.gif'
 const Home = () => {
     return (
         <div>
-            <div className='home-top-div'>
+            <div className='home-div'>
                 <img src={Transparent} alt='' className='home-slideshow-image' />
                 <div className='home-section'>
                     <p className='home-title'>Who Are We?</p>
@@ -22,7 +22,7 @@ const Home = () => {
                     <NavLink to='/about' className='home-button'>Learn More</NavLink>
                 </div>
             </div>
-            <div className='home-body-div'>
+            <div className='home-div' id='home-dark'>
                 <div className='home-section'>
                     <p className='home-title'>Register</p>
                     <hr />
@@ -35,6 +35,10 @@ const Home = () => {
 
                     <NavLink to='/register' className='home-button'>Register Now!</NavLink>
                 </div>
+                {// Volleyball Stocklike Image
+                }
+                <img src={Transparent} alt='' className='home-slideshow-image' />
+
             </div>
         </div >
     )

@@ -110,11 +110,11 @@ header {
 .home-slideshow-image {
   height: 700px;
 }
-.home-body-div {
+#home-dark {
   position: relative;
   background-color: var(--color-primary);
 }
-.home-top-div {
+.home-div {
   width:100%;
   height: 100vh;
   display: flex;
@@ -166,8 +166,11 @@ hr {
 }
 .home-button:hover {
   cursor: pointer;
+  background-color: var(--color-primary);
 }
-
+@media screen and (max-width:1000px){
+  
+}
 /*    /Home    */
 
 /*    Contact    */
@@ -324,7 +327,7 @@ a.footer-links {
 }
 
 a.footer-links:hover {
-  color: var(--color-accent);
+  color: var(--background-color);
 }
 
 /*    /Footer    */
