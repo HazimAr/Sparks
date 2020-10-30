@@ -10,6 +10,7 @@ import Contact from './Pages/Contact'
 import Media from './Pages/Media'
 import Teams from './Pages/Teams'
 import Register from './Pages/Register'
+import Waiver from './Pages/Waiver'
 
 
 import { BrowserRouter, Route, } from "react-router-dom";
@@ -58,6 +59,7 @@ function App() {
         <Route exact path='/media' component={Media} />
         <Route exact path='/teams' component={Teams} />
         <Route exact path='/register' component={Register} />
+        <Route exact path='/waiver' component={Waiver} />
         <Footer />
 
       </div>

@@ -161,23 +161,24 @@ hr {
 
 /*    Contact    */
 .page-title {
-  color:var(--color-accent);
+  color: var(--color-accent);
   font-size: 40px;
-  width:90%;
+  width: 90%;
   font-weight: 600;
-  margin:auto;
+  margin: auto;
   padding: 50px 0;
 }
 .page-text {
-  color:var(--color-accent);
+  color: var(--color-accent);
   font-size: 20px;
-  width:90%;
+  width: 90%;
   font-weight: 600;
-  margin:auto;
+  margin: auto;
   padding: 50px 0;
 }
 
-input[type="text"],select {
+input[type="text"],
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 0;
@@ -187,12 +188,12 @@ input[type="text"],select {
   box-sizing: border-box;
   font-family: monospace;
   margin-bottom: 40px;
-  color:white;
+  color: white;
 
   background-color: transparent;
 }
 textarea {
-  width:100%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -201,10 +202,10 @@ textarea {
   box-sizing: border-box;
   margin-bottom: 40px;
   resize: none;
-  color:white;
+  color: white;
   background-color: transparent;
 }
-input[type=submit] {
+input[type="submit"] {
   background-color: transparent;
   font-size: 20px;
   color: var(--color-accent);
@@ -223,20 +224,20 @@ input[type="submit"] {
   border-radius: 4px;
   transition: all ease-in-out 0.3s;
 }
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: var(--color-accent);
-  color:black;
+  color: black;
 }
 form {
-  width:465px;
-  margin:auto;
+  width: 465px;
+  margin: auto;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width: 800px) {
   .contact-form {
-    width:60%
+    width: 60%;
   }
 }
 
@@ -250,6 +251,29 @@ form {
 }
 
 /*    /Register    */
+
+/*    Waiver    */
+
+.waiver-form {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.waiver-button {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+
+/*    /Waiver    */
 
 /*    Footer    */
 
@@ -299,4 +323,4 @@ a.footer-links:hover {
   color: rgb(255, 255, 255);
 }
 
-/*    Footer    */
+/*    /Footer    */
