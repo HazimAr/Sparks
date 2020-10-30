@@ -51,7 +51,6 @@ function App() {
       <div className="theme-dark">
 
         <NavBar />
-        <div style={{ height: '80px' }} />
         <Route exact path='/' component={Home} />
         <Route exact path='/coaches' component={Coaches} />
         <Route exact path='/about' component={About} />

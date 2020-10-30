@@ -1,33 +1,29 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-
 import Transparent from '../Images/Logos/Transparent-White.gif'
 // import placeholder from '../Images/placeholder.png'
-
 const Home = () => {
     return (
         <div>
-
-            <img src={Transparent} alt='' className='home-slideshow-image'/>
-            <div className='home-body-div'>
-
-                <div className='home-section' id='home-whoAreWe'>
+            <div className='home-top-div'>
+                <img src={Transparent} alt='' className='home-slideshow-image' />
+                <div className='home-section'>
                     <p className='home-title'>Who Are We?</p>
                     <hr />
                     <p className='home-paragraph'>
-
-                        Sparks Volleyball Club is committed to providing an excellent volleyball experience that promotes 
+                        Sparks Volleyball Club is committed to providing an excellent volleyball experience that promotes
                         <br></br>
                         hard work, great attitudes, a genuine respect for the game, a “TEAM” concept at all times,
-                        <br></br> 
+                        <br></br>
                         and leadership development for each athlete.
                         <br></br>
                         SVBC will provide the maximum opportunity for each athlete to train and compete at their highest level.
                     </p>
-                    
                     <NavLink to='/about' className='home-button'>Learn More</NavLink>
                 </div>
-                <div className='home-section' id='home-signUp'>
+            </div>
+            <div className='home-body-div'>
+                <div className='home-section'>
                     <p className='home-title'>Register</p>
                     <hr />
                     <p className='home-paragraph'>
@@ -39,14 +35,8 @@ const Home = () => {
 
                     <NavLink to='/register' className='home-button'>Register Now!</NavLink>
                 </div>
-                
-
             </div>
-
-        </div>
+        </div >
     )
 }
-
 export default Home;
-
-
