@@ -187,15 +187,15 @@ select {
   border-radius: 4px;
   box-sizing: border-box;
   font-family: monospace;
-  margin-bottom: 40px;
-  color: white;
+  margin-bottom: 30px; /*  Dumbass  */
+  color:white;
 
   background-color: transparent;
 }
 textarea {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 0px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -205,34 +205,34 @@ textarea {
   color: white;
   background-color: transparent;
 }
-input[type="submit"] {
-  background-color: transparent;
-  font-size: 20px;
-  color: var(--color-accent);
-  padding: 20px 50px;
-  resize: none;
+.label {
+  text-align: left;
+  margin:5px 0;
 }
 input[type="submit"] {
   width: fit-content;
   background-color: transparent;
+  font-size: 20px;
   color: white;
   padding: 14px 20px;
-  margin: 8px auto;
+  margin: 0px auto;
   border: solid;
   border-color: var(--color-accent);
   border-width: 3px;
   border-radius: 4px;
   transition: all ease-in-out 0.3s;
+    resize: none;
+
 }
 input[type="submit"]:hover {
   background-color: var(--color-accent);
   color: black;
 }
 form {
-  width: 465px;
-  margin: auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  width:465px;
+  margin:auto;
+  padding-top: 0px;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 800px) {
