@@ -1,7 +1,8 @@
 .theme-dark {
-  --color-primary: rgb(31, 31, 31);
+  --color-primary: #1f1f1f;
   --color-mid: gray;
   --color-accent: red;
+  --color-accent-2: blueviolet;
   --color-light: #ffffff;
   --color-dark: #000000;
   --background-color: #eb5454;
@@ -30,7 +31,7 @@ body::-webkit-scrollbar {
   width: 1em;
 }
 body::-webkit-scrollbar-track {
-  background-color: #eb5454;
+  background-color: #1f1f1f;
   border-radius: 0px;
 }
 body::-webkit-scrollbar-thumb {
@@ -111,8 +112,9 @@ header {
   height: 700px;
 }
 #home-dark {
-  position: relative;
   background-color: var(--color-primary);
+  flex-direction: row;
+  padding:unset;
 }
 .home-div {
   width:100%;
@@ -122,25 +124,22 @@ header {
   justify-content: space-evenly;
   align-items: center;
 }
-
 .home-section {
   background-color: var(--color-light);
   color:var(--color-dark);
   height: fit-content;
   box-shadow: 30px 30px 10px rgb(0, 0, 0, 0.65);
-  width:40%;
+  width:800px;
   padding: 50px 0;
   transition: all ease-in-out 0.25s;
   border-radius: 20px;
+
+  flex-wrap: wrap;
 }
 .home-section:hover {
   transform: scale(1.03);
   box-shadow: 43px 43px 15px rgb(0, 0, 0, 0.8);
-
 }
-
-
-
 .home-title {
   font-size: 35px;
 }
@@ -166,11 +165,41 @@ hr {
 }
 .home-button:hover {
   cursor: pointer;
-  background-color: var(--color-primary);
+  background-color: var(--color-accent-2);
 }
-@media screen and (max-width:1000px){
-  
+@media screen and (max-width:1500px){
+  .home-div {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .home-section {
+    margin-bottom: 200px;
+  }
+  #home-dark {
+  padding-top: 100px;
+  flex-direction: column-reverse;
 }
+}
+@media screen and (max-width: 850px) {
+  .home-div {
+    padding-top: 100px;
+  }
+  .home-section {
+    width:90%;
+  }
+  .home-slideshow-image {
+    width:90%;
+    height: fit-content;
+  }
+  .home-paragraph {
+    font-size: 15px;
+  }
+  .home-title {
+    font-size: 25px;
+  }
+
+}
+
 /*    /Home    */
 
 /*    Contact    */
@@ -293,7 +322,7 @@ footer {
   background-color: var(--color-primary);
 }
 .footer-content-div {
-  width: 30%;
+  width: 100%;
   margin: auto;
   display: flex;
   padding-bottom: 20px;
@@ -317,9 +346,14 @@ footer {
   width: 40px;
   display: inline-block;
   margin: 20px 40px;
-  border-radius: 10%;
+  border-radius: 50%;
+  transition: all ease-in-out 0.3s;
+  padding:2px;
+  background-color: var(--background-color);
 }
-
+.footer-socials:hover {
+  background-color: var(--color-accent-2);
+}
 a.footer-links {
   text-decoration: none;
   font-style: italic;
