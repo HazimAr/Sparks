@@ -1,19 +1,13 @@
-/* This is called orginization TO FUCKING ORGINIZE. PUT THE RIGHT THINGS 
-IN THE RIGHT THINGS. Name CSS classNames Accordingly */
-/*    All    */
-
-/* We really need to do colors */
 .theme-dark {
-  --color-primary: #2e2c36;
-  --color-secondary: #fbfbfd;
-  --color-accent: #ffffff;
-  --font-color: #ffffff;
-  --font-color-o: #000000;
+  --color-primary: #eb5454;
+  --color-mid: gray;
+  --color-accent: eb5454;
+  --color-light: #ffffff;
+  --color-dark: #000000;
   --background-color: #17161b;
-  --selection-color: white;
   background-color: var(--background-color);
   text-align: center;
-  color: white;
+  color: var(--color-light);
 }
 .body {
   font-family: Arial, Helvetica, sans-serif;
@@ -23,10 +17,10 @@ IN THE RIGHT THINGS. Name CSS classNames Accordingly */
   padding: 30px;
 }
 ::selection {
-  background: var(--selection-color); /* WebKit/Blink Browsers */
+  background: red; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: var(--selection-color); /* Gecko Browsers */
+  background: red; /* Gecko Browsers */
 }
 body::-webkit-scrollbar {
   width: 1em;
@@ -46,7 +40,7 @@ header {
   width: 100%;
   position: fixed;
   height: 80px;
-  background-color: 111111;
+  background-color: var(--color-primary);
   border-bottom: solid;
   border-color: rgb(75, 78, 87);
   border-width: 2px;
@@ -57,7 +51,6 @@ header {
 .content {
   padding: 16px;
 }
-
 .sticky + .content {
   padding-top: 102px;
 }
@@ -71,7 +64,7 @@ header {
 }
 .nav-link {
   text-decoration: none;
-  color: var(--font-color);
+  color: var(--color-light);
   margin: auto 3%;
   transition: all ease-in-out 0.3s;
   display: flex;
@@ -79,11 +72,11 @@ header {
   font-weight: 300;
 }
 .nav-link:hover {
-  color: red;
+  color: var(--color-accent);
 }
 .nav-link-log {
   background-color: transparent;
-  color: white;
+  color: var(--color-light);
   margin: auto 3%;
   transition: all ease-in-out 0.3s;
   display: flex;
@@ -92,7 +85,7 @@ header {
   font-weight: 300;
 }
 .nav-link-log:hover {
-  color: red;
+  color: var(--color-accent);
   cursor: pointer;
 }
 .nav-name {
@@ -143,8 +136,8 @@ hr {
   padding: 30px 0;
 }
 .home-button {
-  background-color: white;
-  color: var(--font-color-o);
+  background-color: var(--color-light);
+  color: var(--color-dark);
   font-size: 25px;
   border-radius: 30px;
   padding: 10px 25px;
@@ -161,7 +154,7 @@ hr {
 
 /*    Contact    */
 .page-title {
-  color: var(--color-accent);
+  color: var(--color-light);
   font-size: 40px;
   width: 90%;
   font-weight: 600;
@@ -169,14 +162,13 @@ hr {
   padding: 50px 0;
 }
 .page-text {
-  color: var(--color-accent);
+  color: var(--color-light);
   font-size: 20px;
   width: 90%;
   font-weight: 600;
   margin: auto;
   padding: 50px 0;
 }
-
 input[type="text"],
 select {
   width: 100%;
@@ -188,7 +180,7 @@ select {
   box-sizing: border-box;
   font-family: monospace;
   margin-bottom: 30px; /*  Dumbass  */
-  color:white;
+  color:var(--color-light);
 
   background-color: transparent;
 }
@@ -202,7 +194,7 @@ textarea {
   box-sizing: border-box;
   margin-bottom: 40px;
   resize: none;
-  color: white;
+  color: var(--color-light);
   background-color: transparent;
 }
 .label {
@@ -213,11 +205,11 @@ input[type="submit"] {
   width: fit-content;
   background-color: transparent;
   font-size: 20px;
-  color: white;
+  color: var(--color-light);
   padding: 14px 20px;
   margin: 0px auto;
   border: solid;
-  border-color: var(--color-accent);
+  border-color: var(--color-color);
   border-width: 3px;
   border-radius: 4px;
   transition: all ease-in-out 0.3s;
@@ -234,7 +226,6 @@ form {
   padding-top: 0px;
   padding-bottom: 50px;
 }
-
 @media screen and (max-width: 800px) {
   .contact-form {
     width: 60%;
@@ -270,19 +261,18 @@ form {
   cursor: pointer;
 }
 
-.button1 {background-color: #4CAF50;} /* Green */
-.button2 {background-color: #008CBA;} /* Blue */
+
 
 /*    /Waiver    */
 
 /*    Footer    */
 
 footer {
-  background-color: #111111;
   border-top: solid;
   border-color: rgb(75, 78, 87);
   border-width: 2px;
   padding: 100px 0px;
+  background-color: var(--color-primary);
 }
 .footer-content-div {
   width: 30%;
@@ -315,12 +305,13 @@ footer {
 a.footer-links {
   text-decoration: none;
   font-style: italic;
+  color: var(--color-light);
 }
 a.footer-links:link {
-  color: #636363;
+  
 }
 a.footer-links:hover {
-  color: rgb(255, 255, 255);
+  color: var(--color-accent);
 }
 
 /*    /Footer    */
