@@ -5,7 +5,11 @@ import Transparent from '../Images/Logos/Transparent-White.gif'
 import photo from '../Images/photo.png'
 const Home = () => {
     return (
+
         <div>
+            <div className='home-animation' />
+
+
             <div className='home-div'>
                 <img src={Transparent} alt='' className='home-slideshow-image' />
                 <div className='home-section'>
@@ -24,7 +28,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='home-div' id='home-dark'>
-                <div className='home-section'>
+                <div className='home-section' id='home-dark-section'>
                     <p className='home-title'>Register</p>
                     <hr />
                     <p className='home-paragraph'>
@@ -36,7 +40,7 @@ const Home = () => {
 
                     <NavLink to='/register' className='home-button'>Register Now!</NavLink>
                 </div>
-                <img src={photo} alt='' className='home-slideshow-image' />
+                <img src={photo} alt='' id='home-dark-image' className='home-slideshow-image' />
             </div>
         </div >
     )
