@@ -56,16 +56,16 @@ const Contact = () => {
             <p className='page-text'>Contact Us</p>
             <form className='contact-form' onSubmit={handleSubmit}>
 
-                <p style={{ textAlign: 'left' }}>Name *</p>
+                <p className='label'>Name *</p>
                 <input type="text" placeholder="Name" onChange={(e) => setUserName(e.target.value)} value={userName} />
 
-                <p style={{ textAlign: 'left' }}>Email *</p>
+                <p className='label'>Email *</p>
                 <input type="text" placeholder="Email" onChange={(e) => setUserEmail(e.target.value)} value={userEmail} />
 
-                <p style={{ textAlign: 'left' }}>Phone Number *</p>
+                <p className='label'>Phone Number *</p>
                 <input type="text" placeholder="555-555-5555" onChange={(e) => setUserPhone(e.target.value)} value={userPhone} />
 
-                <p style={{ textAlign: 'left' }}>Message *</p>
+                <p className='label'>Message *</p>
                 <textarea type="text" placeholder="Message" onChange={(e) => setUserMessage(e.target.value)} value={userMessage} style={{ height: '100px' }} />
                 <input type="submit" value="SUBMIT" />
                 <p>{errorMessage}<br /></p>
