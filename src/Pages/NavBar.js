@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import React from 'react';
-
-
+import Menu from '../Images/Menu.svg'
+import { animateScroll as scroll } from 'react-scroll'
 
 const NavBar = () => {
 
@@ -18,6 +18,21 @@ const NavBar = () => {
     }
 
 
+    let b = true;
+    function destroy() {
+        let a = document.getElementById('dropdown-div');
+        if (b) {
+            a.style.display = 'none';
+            b = false;
+        }
+        if (a.style.display === 'none') {
+            a.style.display = 'flex'
+        } else {
+            a.style.display = 'none';
+        }
+        scroll.scrollToTop();
+    }
+
     return (
         <div>
             <header id='header'>
@@ -30,6 +45,16 @@ const NavBar = () => {
                     <NavLink to='/about' className='nav-link' activeStyle={{ color: "gray" }}>About</NavLink>
                     <NavLink to='/contact' className='nav-link' activeStyle={{ color: "gray" }}>Contact Us</NavLink>
                 </div>
+
+                <div id="dropdown-div">
+                    <div className='nav-drop-ouside' onClick={destroy} />
+                    <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/" onClick={destroy}>Home</NavLink>
+                    <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/rosters" onClick={destroy}>Teams</NavLink>
+                    <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/creators" onClick={destroy}>Creators</NavLink>
+                    <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/merch" onClick={destroy}>Merch</NavLink>
+                    <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/contact" onClick={destroy}>Contact</NavLink>
+                </div>
+                <img src={Menu} className="menu-logo" onClick={destroy} alt='' />
             </header>
         </div>
     )
