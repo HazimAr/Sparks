@@ -40,7 +40,7 @@ const Home = () => {
 
                     <NavLink to='/register' className='home-button'>Register Now!</NavLink>
                 </div>
-                <img src={photo} alt='' id='home-dark-image' className='home-slideshow-image' />
+                <img src={photo} alt='' className='home-triangle-image' />
             </div>
         </div >
     )
