@@ -216,8 +216,8 @@ header {
   justify-content: space-evenly;
   align-items: center;
 }
-.home-slideshow-image {
-  width: 900px;
+.home-logo {
+  width: 800px;
   border-radius: 10px;
   z-index: 3;
 
@@ -226,9 +226,12 @@ header {
   animation-name: sparksLogo;
   animation-duration: 3s;
   animation-fill-mode: forwards;
+
+  padding: -400;
 }
 #home-dark-image {
-  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.1)));
+  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right
+        bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.1)));
 }
 #home-dark-section {
   box-shadow: -30px 30px 10px rgb(0, 0, 0, 0.65);

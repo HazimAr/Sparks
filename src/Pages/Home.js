@@ -11,7 +11,7 @@ const Home = () => {
 
 
             <div className='home-div'>
-                <img src={Transparent} alt='' className='home-slideshow-image' />
+                <img src={Transparent} alt='' className='home-logo' />
                 <div className='home-section'>
                     <p className='home-title'>Who Are We?</p>
                     <hr />
