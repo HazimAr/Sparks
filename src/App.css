@@ -219,7 +219,7 @@ header {
 .home-slideshow-image {
   width: 900px;
   border-radius: 10px;
-  z-index: 5;
+  z-index: 1;
 
   transition: all ease-in-out 0.5s;
   position: relative;
