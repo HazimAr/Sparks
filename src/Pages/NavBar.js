@@ -37,13 +37,13 @@ const NavBar = () => {
         <div>
             <header id='header'>
                 <div className='nav-link-div'>
-                    <NavLink to='/' className='nav-link'>Home</NavLink>
-                    <NavLink to='/register' className='nav-link' activeStyle={{ color: "gray" }}>Register</NavLink>
-                    <NavLink to='/coaches' className='nav-link' activeStyle={{ color: "gray" }}>Coaches</NavLink>
-                    <NavLink to='/teams' className='nav-link' activeStyle={{ color: "gray" }}>Teams</NavLink>
-                    <NavLink to='/media' className='nav-link' activeStyle={{ color: "gray" }}>Media</NavLink>
-                    <NavLink to='/about' className='nav-link' activeStyle={{ color: "gray" }}>About</NavLink>
-                    <NavLink to='/contact' className='nav-link' activeStyle={{ color: "gray" }}>Contact Us</NavLink>
+                    <NavLink to='/' className='nav-link' exact activeStyle={{ fontSize: "30px" }}>Home</NavLink>
+                    <NavLink to='/register' className='nav-link' activeStyle={{ fontSize: "30px" }}>Register</NavLink>
+                    {/* <NavLink to='/coaches' className='nav-link' activeStyle={{ fontSize: "25px" }}>Coaches</NavLink>
+                    <NavLink to='/teams' className='nav-link' activeStyle={{ fontSize: "25px" }}>Teams</NavLink>
+                    <NavLink to='/media' className='nav-link' activeStyle={{ fontSize: "25px" }}>Media</NavLink> */}
+                    <NavLink to='/about' className='nav-link' activeStyle={{ fontSize: "30px" }}>About Us</NavLink>
+                    <NavLink to='/contact' className='nav-link' activeStyle={{ fontSize: "30px" }}>Contact Us</NavLink>
                 </div>
 
                 <div id="dropdown-div">

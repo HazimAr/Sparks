@@ -37,6 +37,21 @@ body::-webkit-scrollbar-thumb {
   background-color: #ffffff;
   border-radius: 60px;
 }
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
 /*    /All    */
 
 /*    NavBar    */
@@ -46,7 +61,7 @@ header {
   height: 80px;
   background-color: transparent;
   color: white;
-  z-index: 2; /* Sets Appear Over Other Elements */
+  z-index: 10; /* Sets Appear Over Other Elements */
   transition: all ease-in-out 0.8s;
 }
 
@@ -73,7 +88,7 @@ header {
   font-weight: 300;
 }
 .nav-link:hover {
-  color: var(--color-accent-2);
+  font-size: 25px;
 }
 .nav-link-log {
   background-color: transparent;
@@ -217,7 +232,7 @@ header {
   align-items: center;
 }
 .home-logo {
-  width: 800px;
+  width: 900px;
   border-radius: 10px;
   z-index: 4;
 
@@ -226,10 +241,6 @@ header {
   animation-name: sparksLogo;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-}
-#home-dark-image {
-  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right
-        bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.1)));
 }
 #home-dark-section {
   box-shadow: -30px 30px 10px rgb(0, 0, 0, 0.65);
@@ -321,6 +332,8 @@ hr {
 
 .home-triangle-image {
   width: 900px;
+  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right
+        bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.1)));
 }
 
 /*    /Home    */
@@ -373,6 +386,7 @@ textarea {
 .label {
   text-align: left;
   margin: 5px 0;
+  color: white;
 }
 input[type="submit"] {
   width: fit-content;
@@ -389,8 +403,14 @@ input[type="submit"] {
   resize: none;
 }
 input[type="submit"]:hover {
-  background-color: var(--color-accent);
-  color: black;
+  /* background-color: white;
+  border-color:white;
+  color:#1f1f1f; */
+  /* border-color:#1f1f1f; */
+  background-color: #1f1f1f;
+  color:white;
+  transform: scale(1.15);
+  transition: all ease-in-out 0.2s;
 }
 form {
   width: 465px;

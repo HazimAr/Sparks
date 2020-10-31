@@ -52,7 +52,7 @@ const Contact = () => {
 
     return (
         <div>
-            <p className='page-title'>Sparks Volleyball Club</p>
+            <p className='page-title'>Sparks Volleyball Club <style>margin-top:100px;</style></p>
             <p className='page-text'>Contact Us</p>
             <form className='contact-form' onSubmit={handleSubmit}>
 
@@ -66,7 +66,7 @@ const Contact = () => {
                 <input type="text" placeholder="555-555-5555" onChange={(e) => setUserPhone(e.target.value)} value={userPhone} />
 
                 <p className='label'>Message *</p>
-                <textarea type="text" placeholder="Message" onChange={(e) => setUserMessage(e.target.value)} value={userMessage} style={{ height: '100px' }} />
+                <textarea type="text" placeholder="Message" onChange={(e) => setUserMessage(e.target.value)} value={userMessage} style={{ height: '200px' }} />
                 <input type="submit" value="SUBMIT" />
                 <p>{errorMessage}<br /></p>
             </form>
