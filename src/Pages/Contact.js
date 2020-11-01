@@ -6,8 +6,6 @@ import { config } from '../config'
 init("user_dkvZZk4wFtUR8WzHQlJGa");
 
 
-
-
 const Contact = () => {
     const [userEmail, setUserEmail] = useState('');
     const [userMessage, setUserMessage] = useState('')
@@ -25,19 +23,18 @@ const Contact = () => {
     }
 
     const messageSent = () => { // notify user message was sent sucessfully
-        setErrorMessage('Message Sucessfully')
+        setErrorMessage('Message Sucessfully sent')
         setUserEmail('')
         setUserName('')
         setUserPhone('')
         setUserMessage('')
     }
     const inValid = () => { // notify user message is inValid
-        setErrorMessage('Invalid Values')
+        setErrorMessage('Please fill in all required fields')
     }
-
     const handleSubmit = function (e) {
         e.preventDefault()
-        if (validateEmail(userEmail) && userMessage !== '') {
+        if (validateEmail(userEmail) && userMessage !== '' && userName !== '' && userPhone !== '') {
             emailjs.send(config.SERVICE, config.TEMPLATE, {
                 userEmail: userEmail,
                 userMessage: userMessage,
@@ -52,8 +49,7 @@ const Contact = () => {
 
     return (
         <div>
-            <p className='page-title'>Sparks Volleyball Club <style>margin-top:100px;</style></p>
-            <p className='page-text'>Contact Us</p>
+            <p className='page-title' style={{ paddingTop: '100px' }}>Contact Us</p>
             <form className='contact-form' onSubmit={handleSubmit}>
 
                 <p className='label'>Name *</p>
@@ -63,7 +59,7 @@ const Contact = () => {
                 <input type="text" placeholder="Email" onChange={(e) => setUserEmail(e.target.value)} value={userEmail} />
 
                 <p className='label'>Phone Number *</p>
-                <input type="text" placeholder="555-555-5555" onChange={(e) => setUserPhone(e.target.value)} value={userPhone} />
+                <input type="text" placeholder="111-111-1111" onChange={(e) => setUserPhone(e.target.value)} value={userPhone} />
 
                 <p className='label'>Message *</p>
                 <textarea type="text" placeholder="Message" onChange={(e) => setUserMessage(e.target.value)} value={userMessage} style={{ height: '200px' }} />

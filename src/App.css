@@ -14,33 +14,43 @@
 .body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .top-container {
   background-color: #f1f1f1;
   padding: 30px;
 }
+
 ::selection {
-  background: rgb(235, 84, 84); /* WebKit/Blink Browsers */
+  background: rgb(235, 84, 84);
+  /* WebKit/Blink Browsers */
   color: white;
 }
+
 ::-moz-selection {
-  background: #eb5454; /* Gecko Browsers */
+  background: #eb5454;
+  /* Gecko Browsers */
   color: white;
 }
+
 body::-webkit-scrollbar {
   width: 1em;
 }
+
 body::-webkit-scrollbar-track {
   background-color: #1f1f1f;
   border-radius: 0px;
 }
+
 body::-webkit-scrollbar-thumb {
   background-color: #ffffff;
   border-radius: 60px;
 }
+
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
 :-ms-input-placeholder {
@@ -52,25 +62,30 @@ body::-webkit-scrollbar-thumb {
   /* Microsoft Edge */
   color: white;
 }
+
 /*    /All    */
 
 /*    NavBar    */
+
 header {
   width: 100%;
   position: fixed;
   height: 80px;
   background-color: transparent;
   color: white;
-  z-index: 10; /* Sets Appear Over Other Elements */
+  z-index: 10;
+  /* Sets Appear Over Other Elements */
   transition: all ease-in-out 0.8s;
 }
 
 .content {
   padding: 16px;
 }
-.sticky + .content {
+
+.sticky+.content {
   padding-top: 102px;
 }
+
 .nav-link-div {
   display: flex;
   width: 100%;
@@ -78,6 +93,7 @@ header {
   justify-content: center;
   height: 100%;
 }
+
 .nav-link {
   text-decoration: none;
   color: var(--color-light);
@@ -87,9 +103,11 @@ header {
   font-size: 20px;
   font-weight: 300;
 }
+
 .nav-link:hover {
   font-size: 25px;
 }
+
 .nav-link-log {
   background-color: transparent;
   color: var(--color-light);
@@ -100,10 +118,12 @@ header {
   border: none;
   font-weight: 300;
 }
+
 .nav-link-log:hover {
   color: var(--color-accent);
   cursor: pointer;
 }
+
 .nav-name {
   text-decoration: none;
   color: var(---font-color);
@@ -113,9 +133,11 @@ header {
   display: flex;
   align-self: flex-start;
 }
+
 .nav-header {
   background-color: rgb(46, 44, 54, 0.4);
 }
+
 @keyframes this {
   from {
     width: 0%;
@@ -124,6 +146,7 @@ header {
     width: 80%;
   }
 }
+
 #dropdown-div {
   display: none;
   top: 0;
@@ -137,6 +160,7 @@ header {
   animation-duration: 0.8s;
   z-index: 2;
 }
+
 .nav-drop-ouside {
   position: fixed;
   height: 100%;
@@ -145,9 +169,11 @@ header {
   left: 0;
   z-index: 5;
 }
+
 .menu-logo {
   display: none;
 }
+
 @media screen and (max-width: 1300px) {
   .menu-logo {
     display: inline-block;
@@ -178,8 +204,11 @@ header {
     display: none;
   }
 }
+
 /*    /NavBar    */
+
 /*    Home    */
+
 #home-dark {
   background-color: var(--color-primary);
   padding: unset;
@@ -193,14 +222,22 @@ header {
     height: 0vh;
   }
 }
+
 @keyframes text {
   from {
     transform: scale(0);
+    visibility: visible;
   }
   to {
     transform: scale(1);
+    visibility: visible;
   }
 }
+
+#animateText {
+  visibility: visible;
+}
+
 @keyframes sparksLogo {
   from {
     left: 1000px;
@@ -211,18 +248,15 @@ header {
     opacity: 1;
   }
 }
-.home-animation {
-  animation-name: onLoad;
-  animation-duration: 1s;
-  animation-delay: 1.5s;
-  position: absolute;
-  animation-fill-mode: forwards;
 
+.home-animation {
+  position: absolute;
   width: 100%;
-  height: 100%;
   background-color: var(--color-accent-2);
+  height: 0;
   z-index: 1;
 }
+
 .home-div {
   width: 100%;
   height: 100vh;
@@ -231,24 +265,24 @@ header {
   justify-content: space-evenly;
   align-items: center;
 }
+
 .home-logo {
   width: 900px;
   border-radius: 10px;
   z-index: 4;
-
   transition: all ease-in-out 0.5s;
   position: relative;
-  animation-name: sparksLogo;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
+
 #home-dark-section {
   box-shadow: -30px 30px 10px rgb(0, 0, 0, 0.65);
 }
+
 #home-dark-section:hover {
   transform: scale(1.03);
   box-shadow: -43px 43px 15px rgb(0, 0, 0, 0.8);
 }
+
 .home-section {
   background-color: var(--color-light);
   color: var(--color-dark);
@@ -259,30 +293,31 @@ header {
   transition: all ease-in-out 0.25s;
   border-radius: 20px;
   z-index: 3;
-
-  animation: text 1.5s;
-  animation-delay: 2.5s;
-  animation-fill-mode: forwards; /* for this shit to work the elements involved must be below for some fucking reason */
-  transform: scale(0);
+  /* for this shit to work the elements involved must be below for some fucking reason */
+  transform: scale(1);
 }
 
 .home-section:hover {
   transform: scale(1.03);
   box-shadow: 43px 43px 15px rgb(0, 0, 0, 0.8);
 }
+
 .home-title {
   font-size: 35px;
 }
+
 hr {
   width: 20%;
   margin: 20px auto;
 }
+
 .home-paragraph {
   width: 80%;
   margin: auto;
   font-size: 20px;
   padding: 30px 0;
 }
+
 .home-button {
   background-color: var(--background-color);
   color: var(--color-light);
@@ -293,10 +328,12 @@ hr {
   transition: all ease-in-out 0.3s;
   /* Note: we can't place margin on NavLinks so build around them */
 }
+
 .home-button:hover {
   cursor: pointer;
   background-color: var(--color-accent-2);
 }
+
 @media screen and (max-width: 1700px) {
   .home-div {
     flex-direction: column;
@@ -308,6 +345,9 @@ hr {
   #home-dark {
     padding-top: 100px;
     flex-direction: column-reverse;
+  }
+  .home-triangle-image {
+    margin-bottom: 100px;
   }
 }
 
@@ -332,13 +372,14 @@ hr {
 
 .home-triangle-image {
   width: 900px;
-  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right
-        bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.1)));
+  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.1)));
 }
+
 
 /*    /Home    */
 
 /*    Contact    */
+
 .page-title {
   color: var(--color-light);
   font-size: 40px;
@@ -347,6 +388,7 @@ hr {
   margin: auto;
   padding: 50px 0;
 }
+
 .page-text {
   color: var(--color-light);
   font-size: 20px;
@@ -355,8 +397,8 @@ hr {
   margin: auto;
   padding: 50px 0;
 }
-input[type="text"],
-select {
+
+input[type="text"], select {
   width: 100%;
   padding: 12px 20px;
   margin: 0;
@@ -365,11 +407,13 @@ select {
   border-radius: 4px;
   box-sizing: border-box;
   font-family: monospace;
-  margin-bottom: 30px; /*  Dumbass  */
+  margin-bottom: 30px;
+  /*  Dumbass  */
   color: var(--color-light);
-
   background-color: transparent;
+  outline-width: 0;
 }
+
 textarea {
   width: 100%;
   padding: 12px 20px;
@@ -382,12 +426,15 @@ textarea {
   resize: none;
   color: var(--color-light);
   background-color: transparent;
+  outline-width: 0;
 }
+
 .label {
   text-align: left;
   margin: 5px 0;
   color: white;
 }
+
 input[type="submit"] {
   width: fit-content;
   background-color: transparent;
@@ -396,28 +443,31 @@ input[type="submit"] {
   padding: 14px 20px;
   margin: 0px auto;
   border: solid;
-  border-color: var(--color-color);
   border-width: 3px;
   border-radius: 4px;
   transition: all ease-in-out 0.3s;
   resize: none;
+  outline-width: 0;
 }
+
 input[type="submit"]:hover {
   /* background-color: white;
   border-color:white;
   color:#1f1f1f; */
   /* border-color:#1f1f1f; */
-  background-color: #1f1f1f;
-  color:white;
+  background-color: white;
+  color: var(--color-accent);
   transform: scale(1.15);
-  transition: all ease-in-out 0.2s;
+  border-radius: 10px;
 }
+
 form {
   width: 465px;
   margin: auto;
   padding-top: 0px;
   padding-bottom: 50px;
 }
+
 @media screen and (max-width: 800px) {
   .contact-form {
     width: 60%;
@@ -436,10 +486,12 @@ form {
 /*    /Register    */
 
 /*    Waiver    */
+
 .waiver-form {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .waiver-button {
   border: none;
   padding: 15px 32px;
@@ -450,31 +502,69 @@ form {
   margin: 4px 2px;
   cursor: pointer;
 }
+
 /*    /Waiver    */
 
+/*    AboutUs    */
+
+.about-div {
+  padding:200px 0;
+  display:flex;
+  justify-content: center;
+  align-content: center ;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.about-image {
+  width: 700px;
+}
+
+@media screen and (max-width:1600px) {
+  .about-image {
+    margin-top: 100px;
+  }
+  .about-div {
+    flex-direction: column;
+  }
+}
+
+.about-horizon {
+  margin-top: 100px;
+  width: 700px;
+}
+
+/*    /AboutUs    */
+
 /*    Footer    */
+
 footer {
   border-top: 0.5px solid var(--color-accent);
   padding: 100px 0px;
   background-color: var(--color-primary);
 }
+
 .footer-content-div {
   width: 100%;
   margin: auto;
   display: flex;
 }
+
 .footer-content {
   margin: auto;
 }
+
 .footer-header {
   font-size: 20px;
   color: var(--font-color);
 }
+
 .footer-socials-div {
   width: fit-content;
   margin: auto;
   display: flex;
 }
+
 .footer-socials {
   width: 40px;
   display: inline-block;
@@ -484,9 +574,11 @@ footer {
   padding: 2px;
   background-color: var(--background-color);
 }
+
 .footer-socials:hover {
   background-color: var(--color-accent-2);
 }
+
 a.footer-links {
   text-decoration: none;
   font-style: italic;

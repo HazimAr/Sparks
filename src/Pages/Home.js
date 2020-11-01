@@ -4,15 +4,36 @@ import Transparent from '../Images/Logos/Transparent-White.gif'
 // import placeholder from '../Images/placeholder.png'
 import photo from '../Images/photo.png'
 const Home = () => {
+
+    var b = true
+    window.onload = function () {
+
+        if (b) {
+            const section = document.getElementById('animateSection')
+            section.style.height = '100vh'
+            section.style.animation = 'onLoad 2s ease 1.5s 1 forwards'
+
+            const image = document.getElementById('animateImage')
+
+            image.style.animation = 'sparksLogo 2s ease 0s 1 forwards'
+
+            const text = document.getElementById('animateText')
+            text.style.visibility = 'hidden'
+
+            text.style.animation = 'text 1.5s ease 1.5s 1 forwards'
+            b = false
+
+            //  animation: name duration timing-function delay iteration-count direction fill-mode;
+
+        }
+    }
     return (
 
         <div>
-            <div className='home-animation' />
-
-
+            <div className='home-animation' id='animateSection' />
             <div className='home-div'>
-                <img src={Transparent} alt='' className='home-logo' />
-                <div className='home-section'>
+                <img src={Transparent} alt='' className='home-logo' id='animateImage' />
+                <div className='home-section' id='animateText'>
                     <p className='home-title'>Who Are We?</p>
                     <hr />
                     <p className='home-paragraph'>
