@@ -39,9 +39,6 @@ const NavBar = () => {
                 <div className='nav-link-div'>
                     <NavLink to='/' className='nav-link' exact activeStyle={{ fontSize: "30px" }}>Home</NavLink>
                     <NavLink to='/register' className='nav-link' activeStyle={{ fontSize: "30px" }}>Register</NavLink>
-                    {/* <NavLink to='/coaches' className='nav-link' activeStyle={{ fontSize: "25px" }}>Coaches</NavLink>
-                    <NavLink to='/teams' className='nav-link' activeStyle={{ fontSize: "25px" }}>Teams</NavLink>
-                    <NavLink to='/media' className='nav-link' activeStyle={{ fontSize: "25px" }}>Media</NavLink> */}
                     <NavLink to='/about' className='nav-link' activeStyle={{ fontSize: "30px" }}>About Us</NavLink>
                     <NavLink to='/contact' className='nav-link' activeStyle={{ fontSize: "30px" }}>Contact Us</NavLink>
                 </div>
@@ -49,10 +46,9 @@ const NavBar = () => {
                 <div id="dropdown-div">
                     <div className='nav-drop-ouside' onClick={destroy} />
                     <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/" onClick={destroy}>Home</NavLink>
-                    <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/rosters" onClick={destroy}>Teams</NavLink>
-                    <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/creators" onClick={destroy}>Creators</NavLink>
-                    <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/merch" onClick={destroy}>Merch</NavLink>
-                    <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/contact" onClick={destroy}>Contact</NavLink>
+                    <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/register" onClick={destroy}>Register</NavLink>
+                    <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/about" onClick={destroy}>About Us</NavLink>
+                    <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/contact" onClick={destroy}>Contact Us</NavLink>
                 </div>
                 <img src={Menu} className="menu-logo" onClick={destroy} alt='' />
             </header>
