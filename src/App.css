@@ -10,7 +10,6 @@
   text-align: center;
   color: var(--color-light);
 }
-
 .body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -82,7 +81,7 @@ header {
   padding: 16px;
 }
 
-.sticky+.content {
+.sticky + .content {
   padding-top: 102px;
 }
 
@@ -372,9 +371,9 @@ hr {
 
 .home-triangle-image {
   width: 900px;
-  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.1)));
+  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right
+        bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.1)));
 }
-
 
 /*    /Home    */
 
@@ -398,7 +397,8 @@ hr {
   padding: 50px 0;
 }
 
-input[type="text"], select {
+input[type="text"],
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 0;
@@ -508,10 +508,10 @@ form {
 /*    AboutUs    */
 
 .about-div {
-  padding:200px 0;
-  display:flex;
+  padding: 200px 0;
+  display: flex;
   justify-content: center;
-  align-content: center ;
+  align-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -520,7 +520,7 @@ form {
   width: 700px;
 }
 
-@media screen and (max-width:1600px) {
+@media screen and (max-width: 1600px) {
   .about-image {
     margin-top: 100px;
   }
