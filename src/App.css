@@ -2,10 +2,10 @@
   --color-primary: #1f1f1f;
   --color-mid: gray;
   --color-accent: #bb3737;
-  --color-accent-2: black;
+  --color-accent-2: #1f1f1f;
   --color-light: #ffffff;
   --color-dark: #000000;
-  --background-color: #bb3737;
+  --background-color: #9e2d2d;
  
   
   background-color: var(--background-color);
