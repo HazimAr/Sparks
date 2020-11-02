@@ -1,11 +1,13 @@
 .theme-dark {
   --color-primary: #1f1f1f;
   --color-mid: gray;
-  --color-accent: #eb5454;
-  --color-accent-2: blueviolet;
+  --color-accent: #bb3737;
+  --color-accent-2: black;
   --color-light: #ffffff;
   --color-dark: #000000;
-  --background-color: #eb5454;
+  --background-color: #bb3737;
+ 
+  
   background-color: var(--background-color);
   text-align: center;
   color: var(--color-light);
@@ -20,7 +22,7 @@
 }
 
 ::selection {
-  background: rgb(235, 84, 84);
+  background: var(--color-accent);
   /* WebKit/Blink Browsers */
   color: white;
 }
