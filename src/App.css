@@ -280,7 +280,6 @@ header {
 }
 
 #home-dark-section:hover {
-  transform: scale(1.03);
   box-shadow: -43px 43px 15px rgb(0, 0, 0, 0.8);
 }
 
@@ -295,11 +294,9 @@ header {
   border-radius: 20px;
   z-index: 3;
   /* for this shit to work the elements involved must be below for some fucking reason */
-  transform: scale(1);
 }
 
 .home-section:hover {
-  transform: scale(1.03);
   box-shadow: 43px 43px 15px rgb(0, 0, 0, 0.8);
 }
 
