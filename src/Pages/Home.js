@@ -59,50 +59,7 @@ const Home = () => {
                 </div>
                 <img src={photo} alt='' className='home-triangle-image' />
             </div>
-            <div>
-                                <section class="section section--theme-light section--style-border">
-    <div class="inner">
-        <div class="column column--rel-same">
-            <hgroup class="nameplate">
-                <h2 class="title title--style-strong nameplate__title">Frequently answered questions</h2>
-            </hgroup>
-        </div>
-
-        <div class="column column--width-third column--pos-left">
-    <div class="feature">
-        <i class="icon icon--glyph-chat-double-bubble-2 feature__icon section__icon"></i>
-        <div class="feature__details">
-            <h3 class="title feature__title">Which sports does it support?</h3>
-            <p class="description">The plugin will support most team sports with a scoring system. You can customize the table columns and player statistics. Presets are included for commonly requested sports, and you can even create your own!</p>
-            <a class="link column__link" href="https://www.themeboy.com/preset-sports/" data-category="pro" data-action="sports" data-label="faq">View list of sports</a>
-        </div>
-    </div>
-</div>
-
-<div class="column column--width-third">
-    <div class="feature">
-        <i class="icon icon--glyph-chat-double-bubble-3 feature__icon section__icon"></i>
-        <div class="feature__details">
-            <h3 class="title feature__title">Will it work with my theme?</h3>
-            <p class="description">Yes! SportsPress Pro will work with any theme, but may require some styling to make it match nicely. If you're using one of our themes, SportsPress Pro expands on the included sports features by adding powerful new modules.</p>
-            <a class="link column__link" href="https://www.themeboy.com/sportspress-pro/feature/" data-category="pro" data-action="features" data-label="faq">Learn about the features</a>
-        </div>
-    </div>
-</div>
-
-<div class="column column--width-third column--pos-right">
-    <div class="feature">
-        <i class="icon icon--glyph-chat-double-bubble-4 feature__icon section__icon"></i>
-        <div class="feature__details">
-            <h3 class="title feature__title">Can it manage multiple sports?</h3>
-            <p class="description">Yes! Multisite enables you to have each sport on a subdomain of your main site and allows you to share widgets from any site within your network. A League License or Agency License is needed to receive updates on Multisite.</p>
-            <a class="link column__link" href="https://www.themeboy.com/sportspress-extensions/multisite/" data-category="pro" data-action="multisite" data-label="faq">Discover multisite</a>
-        </div>
-    </div>
-</div>    </div>
-</section>
-            </div>
-            
+  
 
 
         </div >
