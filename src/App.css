@@ -71,13 +71,6 @@ header {
   transition: all ease-in-out 0.8s;
 }
 
-.content {
-  padding: 16px;
-}
-
-.sticky + .content {
-  padding-top: 102px;
-}
 
 .nav-link-div {
   display: flex;
@@ -162,7 +155,6 @@ header {
   left: 0;
   z-index: 5;
 }
-
 .menu-logo {
   display: none;
 }
@@ -198,24 +190,6 @@ header {
   }
 }
 
-/*    /NavBar    */
-
-/*    Home    */
-
-.fixed-home-div {
-  position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-}
-
-#home-dark {
-  background-color: var(--color-primary);
-  padding: unset;
-  position: relative;
-  z-index: 1;
-
-}
 
 @keyframes onLoad {
   from {
@@ -237,10 +211,6 @@ header {
   }
 }
 
-#animateText {
-  visibility: visible;
-}
-
 @keyframes sparksLogo {
   from {
     left: 1000px;
@@ -250,6 +220,27 @@ header {
     left: 0;
     opacity: 1;
   }
+}
+/*    /NavBar    */
+
+/*    Home    */
+
+.fixed-home-div {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+}
+
+.relative-home-div {
+  visibility: hidden!important;
+}
+
+#home-dark {
+  background-color: var(--color-primary);
+  padding: unset;
+  position: relative;
+  z-index: 1;
 }
 
 .home-animation {
@@ -277,14 +268,6 @@ header {
   position: relative;
 }
 
-#home-dark-section {
-  box-shadow: -30px 30px 10px rgb(0, 0, 0, 0.65);
-}
-
-#home-dark-section:hover {
-  box-shadow: -43px 43px 15px rgb(0, 0, 0, 0.8);
-}
-
 .home-section {
   background-color: var(--color-light);
   color: var(--color-dark);
@@ -293,11 +276,19 @@ header {
   padding: 50px 0;
   transition: all ease-in-out 0.25s;
   border-radius: 20px;
-  /* for this shit to work the elements involved must be below for some fucking reason */
 }
 
 .home-section:hover {
   box-shadow: 43px 43px 15px rgb(0, 0, 0, 0.8);
+}
+
+
+#home-dark-section {
+  box-shadow: -30px 30px 10px rgb(0, 0, 0, 0.65);
+}
+
+#home-dark-section:hover {
+  box-shadow: -43px 43px 15px rgb(0, 0, 0, 0.8);
 }
 
 .home-title {
@@ -332,7 +323,19 @@ hr {
   background-color: var(--color-accent-2);
 }
 
+
+.home-triangle-image {
+  width: 900px;
+  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.1)));
+}
+
 @media screen and (max-width: 1700px) {
+  .fixed-home-div {
+    display: none;
+  }
+  .relative-home-div {
+    visibility: visible!important;
+  }
   .home-div {
     flex-direction: column;
     height: fit-content;
@@ -356,7 +359,11 @@ hr {
   .home-section {
     width: 90%;
   }
-  .home-slideshow-image {
+  .home-logo {
+    width: 90%;
+    height: fit-content;
+  }
+  .home-triangle-image {
     width: 90%;
     height: fit-content;
   }
@@ -368,11 +375,6 @@ hr {
   }
 }
 
-.home-triangle-image {
-  width: 900px;
-  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right
-        bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.1)));
-}
 
 /*    /Home    */
 
@@ -480,6 +482,7 @@ form {
 .register-form {
   padding-top: 100px;
   padding-bottom: 100px;
+  margin-bottom: 1000px;
 }
 
 /*    /Register    */
@@ -588,6 +591,18 @@ a.footer-links {
 
 a.footer-links:hover {
   color: var(--background-color);
+}
+@media screen and (max-width:1000px) {
+  .footer-socials-div {
+    width:100;
+  }
+  .footer-socials {
+    margin:0;
+  }
+  .footer-img-link {
+    margin:20px;
+  }
+  
 }
 
 /*    /Footer    */
