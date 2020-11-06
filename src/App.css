@@ -166,12 +166,11 @@ header {
     text-align: center;
     color: var(--color-accent);
     font-size: 40px;
-    padding: 0 60px;
+    padding: 0 10px;
     margin: auto;
     text-decoration: none;
     border-bottom: solid;
     border-color: var(--color-accent);
-    border-radius: 5px;
     border-width: 2px;
   }
   .dropdown-link:hover {
@@ -322,6 +321,36 @@ hr {
   -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.1)));
 }
 
+.home-faq-div {
+  background-color: var(--background-color);
+  position: relative;
+  z-index: 101;
+  padding:50px 0;
+  padding-bottom: 100px;
+}
+.home-faq-card-div {
+  position: relative;
+  z-index: 101;
+
+  display: flex;
+  width:60%;
+  margin:auto;
+}
+.faq-card {
+  border-radius: 5px;
+  margin:20px auto;
+}
+.faq-title {
+  flex-basis: 100%;
+  font-size: 30px;
+}
+.faq-text {
+  font-size: 20px;
+}
+
+
+
+
 @media screen and (max-width: 1700px) {
   .fixed-home-div {
     display: none;
@@ -458,6 +487,15 @@ form {
   .contact-form {
     width: 60%;
   }
+}
+
+.contact-links{
+  text-decoration: none;
+  font-style: italic;
+  color: var(--color-light);
+}
+.contact-links:hover {
+  color:var(--color-accent-2);
 }
 
 /*    /Contact    */

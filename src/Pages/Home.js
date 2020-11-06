@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import Transparent from '../Images/Logos/Transparent-White.gif'
-import photo from '../Images/photo.png'
+import photo from '../Images/main/8-22-2_Tourney-86.jpg'
 
 const Top = (props) => {
     return (
@@ -18,10 +18,21 @@ const Top = (props) => {
                         and leadership development for each athlete.
                         SVBC will provide the maximum opportunity for each athlete to train and compete at their highest level.
                     </p>
-                    <NavLink to='/about' className='home-button'>Learn More</NavLink>
+                    <NavLink to='/about' className='home-button'>About Us</NavLink>
                 </div>
             </div>
         </div >
+    )
+}
+
+const Card = (props) => {
+
+    return (
+        <div className='faq-card'>
+            <p className='faq-title'>{props.title}</p>
+            <p className='faq-text'>{props.text}</p>
+
+        </div>
     )
 }
 const Home = () => {
@@ -59,10 +70,23 @@ const Home = () => {
                 </div>
                 <img src={photo} alt='' className='home-triangle-image' />
             </div>
-  
 
-
-        </div >
+            <div className='home-faq-div'>
+                <p className='page-title'>Frequently Asked Questions</p>
+                <div className='home-faq-card-div'>
+                    {/* Clean Fucking Code */}
+                    <Card
+                        title='Lorem'
+                        text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco' />
+                    <Card
+                        title='Lorem'
+                        text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco' />
+                    <Card
+                        title='Lorem'
+                        text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco' />
+                </div>
+            </div>
+        </div>
     )
 }
 export default Home;

@@ -49,8 +49,12 @@ const Contact = () => {
     return (
         <div>
             <p className='page-title' style={{ paddingTop: '100px' }}>Contact Us</p>
-            <form className='contact-form' onSubmit={handleSubmit}>
+            <a className='contact-links' href="mailto:SparksVolleyBallClub@gmail.com">SparksVolleyBallClub@gmail.com</a>
+            <p />
+            <a className='contact-links' href="tel:7025029462">(702) 502-9462</a>
+            <p>Las Vegas, Nevada</p>
 
+            <form className='contact-form' onSubmit={handleSubmit}>
                 <p className='label'>Name *</p>
                 <input type="text" placeholder="Name" onChange={(e) => setUserName(e.target.value)} value={userName} />
 
