@@ -5,7 +5,6 @@ import { config } from '../config'
 
 init("user_dkvZZk4wFtUR8WzHQlJGa");
 
-
 const Contact = () => {
     const [userEmail, setUserEmail] = useState('');
     const [userMessage, setUserMessage] = useState('')

@@ -48,19 +48,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
   opacity: 1;
-  /* Firefox */
 }
 
 :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: white;
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
   color: white;
 }
 
@@ -210,9 +202,19 @@ header {
 
 /*    Home    */
 
+.fixed-home-div {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+}
+
 #home-dark {
   background-color: var(--color-primary);
   padding: unset;
+  position: relative;
+  z-index: 1;
+
 }
 
 @keyframes onLoad {
@@ -286,13 +288,11 @@ header {
 .home-section {
   background-color: var(--color-light);
   color: var(--color-dark);
-  height: fit-content;
   box-shadow: 30px 30px 10px rgb(0, 0, 0, 0.65);
   width: 800px;
   padding: 50px 0;
   transition: all ease-in-out 0.25s;
   border-radius: 20px;
-  z-index: 3;
   /* for this shit to work the elements involved must be below for some fucking reason */
 }
 
@@ -541,6 +541,8 @@ footer {
   border-top: 0.5px solid var(--color-accent);
   padding: 100px 0px;
   background-color: var(--color-primary);
+  position: relative;
+  z-index: 100;
 }
 
 .footer-content-div {
