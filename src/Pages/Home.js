@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import Transparent from '../Images/Logos/Transparent-White.gif'
-import photo from '../Images/main/8-22-2_Tourney-86.jpg'
+import photo from '../Images/TourneyImage.jpg'
 
 const Top = (props) => {
     return (
