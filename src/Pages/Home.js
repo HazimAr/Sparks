@@ -4,7 +4,6 @@ import Transparent from '../Images/Logos/Transparent-White.gif'
 import photo from '../Images/photo.png'
 
 const Top = (props) => {
-
     return (
         <div className={`${props.pos}-home-div`}  >
             <div className='home-animation' id='animateSection' />
@@ -15,11 +14,8 @@ const Top = (props) => {
                     <hr />
                     <p className='home-paragraph'>
                         Sparks Volleyball Club is committed to providing an excellent volleyball experience that promotes
-
                         hard work, great attitudes, a genuine respect for the game, a “TEAM” concept at all times,
-
                         and leadership development for each athlete.
-
                         SVBC will provide the maximum opportunity for each athlete to train and compete at their highest level.
                     </p>
                     <NavLink to='/about' className='home-button'>Learn More</NavLink>
@@ -27,9 +23,7 @@ const Top = (props) => {
             </div>
         </div >
     )
-
 }
-
 const Home = () => {
     let b = true
     window.onload = function () {
@@ -46,9 +40,7 @@ const Home = () => {
         }
     }
     return (
-
         <div>
-
             <Top pos='fixed' />
             <Top pos='relative' />
 
@@ -67,6 +59,8 @@ const Home = () => {
                 </div>
                 <img src={photo} alt='' className='home-triangle-image' />
             </div>
+
+
         </div >
     )
 }

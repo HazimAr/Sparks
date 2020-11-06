@@ -57,9 +57,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*    /All    */
-
 /*    NavBar    */
-
 header {
   width: 100%;
   position: fixed;
@@ -70,7 +68,6 @@ header {
   /* Sets Appear Over Other Elements */
   transition: all ease-in-out 0.8s;
 }
-
 
 .nav-link-div {
   display: flex;
@@ -480,9 +477,8 @@ form {
 /*    Register    */
 
 .register-form {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin-bottom: 1000px;
+  padding-top: 150px;
+  padding-bottom: 200px;
 }
 
 /*    /Register    */
