@@ -1,17 +1,15 @@
 .theme-dark {
   --color-primary: #1f1f1f;
-  --color-mid: gray;
   --color-accent: #bb3737;
   --color-accent-2: #1f1f1f;
   --color-light: #ffffff;
   --color-dark: #000000;
   --background-color: #9e2d2d;
- 
-  
   background-color: var(--background-color);
   text-align: center;
   color: var(--color-light);
 }
+
 .body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -23,18 +21,16 @@
 
 ::selection {
   background: var(--color-accent);
-  /* WebKit/Blink Browsers */
   color: white;
 }
 
 ::-moz-selection {
   background: #eb5454;
-  /* Gecko Browsers */
   color: white;
 }
 
 body::-webkit-scrollbar {
-  width: 1em;
+  width: 0.7em;
 }
 
 body::-webkit-scrollbar-track {
@@ -272,7 +268,7 @@ header {
   width: 800px;
   padding: 50px 0;
   transition: all ease-in-out 0.25s;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .home-section:hover {
@@ -395,8 +391,7 @@ hr {
   padding: 50px 0;
 }
 
-input[type="text"],
-select {
+input[type="text"], select {
   width: 100%;
   padding: 12px 20px;
   margin: 0;
@@ -434,29 +429,22 @@ textarea {
 }
 
 input[type="submit"] {
-  width: fit-content;
   background-color: transparent;
   font-size: 20px;
   color: var(--color-light);
   padding: 14px 20px;
   margin: 0px auto;
-  border: solid;
+  border: solid white;
   border-width: 3px;
   border-radius: 4px;
   transition: all ease-in-out 0.3s;
-  resize: none;
   outline-width: 0;
 }
 
 input[type="submit"]:hover {
-  /* background-color: white;
-  border-color:white;
-  color:#1f1f1f; */
-  /* border-color:#1f1f1f; */
   background-color: white;
   color: var(--color-accent);
-  transform: scale(1.15);
-  border-radius: 10px;
+  border-color: white;
 }
 
 form {
@@ -483,25 +471,6 @@ form {
 
 /*    /Register    */
 
-/*    Waiver    */
-
-.waiver-form {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.waiver-button {
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-/*    /Waiver    */
 
 /*    AboutUs    */
 
