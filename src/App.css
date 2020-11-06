@@ -1,17 +1,15 @@
 .theme-dark {
   --color-primary: #1f1f1f;
-  --color-mid: gray;
   --color-accent: #bb3737;
   --color-accent-2: #1f1f1f;
   --color-light: #ffffff;
   --color-dark: #000000;
   --background-color: #9e2d2d;
- 
-  
   background-color: var(--background-color);
   text-align: center;
   color: var(--color-light);
 }
+
 .body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -23,18 +21,16 @@
 
 ::selection {
   background: var(--color-accent);
-  /* WebKit/Blink Browsers */
   color: white;
 }
 
 ::-moz-selection {
   background: #eb5454;
-  /* Gecko Browsers */
   color: white;
 }
 
 body::-webkit-scrollbar {
-  width: 1em;
+  width: 0.7em;
 }
 
 body::-webkit-scrollbar-track {
@@ -48,26 +44,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
   opacity: 1;
-  /* Firefox */
 }
 
 :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: white;
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
   color: white;
 }
 
 /*    /All    */
-
 /*    NavBar    */
-
 header {
   width: 100%;
   position: fixed;
@@ -77,14 +63,6 @@ header {
   z-index: 10;
   /* Sets Appear Over Other Elements */
   transition: all ease-in-out 0.8s;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky + .content {
-  padding-top: 102px;
 }
 
 .nav-link-div {
@@ -170,7 +148,6 @@ header {
   left: 0;
   z-index: 5;
 }
-
 .menu-logo {
   display: none;
 }
@@ -206,14 +183,6 @@ header {
   }
 }
 
-/*    /NavBar    */
-
-/*    Home    */
-
-#home-dark {
-  background-color: var(--color-primary);
-  padding: unset;
-}
 
 @keyframes onLoad {
   from {
@@ -235,10 +204,6 @@ header {
   }
 }
 
-#animateText {
-  visibility: visible;
-}
-
 @keyframes sparksLogo {
   from {
     left: 1000px;
@@ -248,6 +213,27 @@ header {
     left: 0;
     opacity: 1;
   }
+}
+/*    /NavBar    */
+
+/*    Home    */
+
+.fixed-home-div {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+}
+
+.relative-home-div {
+  visibility: hidden!important;
+}
+
+#home-dark {
+  background-color: var(--color-primary);
+  padding: unset;
+  position: relative;
+  z-index: 1;
 }
 
 .home-animation {
@@ -275,32 +261,27 @@ header {
   position: relative;
 }
 
+.home-section {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  box-shadow: 30px 30px 10px rgb(0, 0, 0, 0.65);
+  width: 800px;
+  padding: 50px 0;
+  transition: all ease-in-out 0.25s;
+  border-radius: 5px;
+}
+
+.home-section:hover {
+  box-shadow: 43px 43px 15px rgb(0, 0, 0, 0.8);
+}
+
+
 #home-dark-section {
   box-shadow: -30px 30px 10px rgb(0, 0, 0, 0.65);
 }
 
 #home-dark-section:hover {
-  transform: scale(1.03);
   box-shadow: -43px 43px 15px rgb(0, 0, 0, 0.8);
-}
-
-.home-section {
-  background-color: var(--color-light);
-  color: var(--color-dark);
-  height: fit-content;
-  box-shadow: 30px 30px 10px rgb(0, 0, 0, 0.65);
-  width: 800px;
-  padding: 50px 0;
-  transition: all ease-in-out 0.25s;
-  border-radius: 20px;
-  z-index: 3;
-  /* for this shit to work the elements involved must be below for some fucking reason */
-  transform: scale(1);
-}
-
-.home-section:hover {
-  transform: scale(1.03);
-  box-shadow: 43px 43px 15px rgb(0, 0, 0, 0.8);
 }
 
 .home-title {
@@ -335,7 +316,19 @@ hr {
   background-color: var(--color-accent-2);
 }
 
+
+.home-triangle-image {
+  width: 900px;
+  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.1)));
+}
+
 @media screen and (max-width: 1700px) {
+  .fixed-home-div {
+    display: none;
+  }
+  .relative-home-div {
+    visibility: visible!important;
+  }
   .home-div {
     flex-direction: column;
     height: fit-content;
@@ -359,7 +352,11 @@ hr {
   .home-section {
     width: 90%;
   }
-  .home-slideshow-image {
+  .home-logo {
+    width: 90%;
+    height: fit-content;
+  }
+  .home-triangle-image {
     width: 90%;
     height: fit-content;
   }
@@ -371,11 +368,6 @@ hr {
   }
 }
 
-.home-triangle-image {
-  width: 900px;
-  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right
-        bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.1)));
-}
 
 /*    /Home    */
 
@@ -399,8 +391,7 @@ hr {
   padding: 50px 0;
 }
 
-input[type="text"],
-select {
+input[type="text"], select {
   width: 100%;
   padding: 12px 20px;
   margin: 0;
@@ -438,29 +429,22 @@ textarea {
 }
 
 input[type="submit"] {
-  width: fit-content;
   background-color: transparent;
   font-size: 20px;
   color: var(--color-light);
   padding: 14px 20px;
   margin: 0px auto;
-  border: solid;
+  border: solid white;
   border-width: 3px;
   border-radius: 4px;
   transition: all ease-in-out 0.3s;
-  resize: none;
   outline-width: 0;
 }
 
 input[type="submit"]:hover {
-  /* background-color: white;
-  border-color:white;
-  color:#1f1f1f; */
-  /* border-color:#1f1f1f; */
   background-color: white;
   color: var(--color-accent);
-  transform: scale(1.15);
-  border-radius: 10px;
+  border-color: white;
 }
 
 form {
@@ -481,31 +465,12 @@ form {
 /*    Register    */
 
 .register-form {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 150px;
+  padding-bottom: 200px;
 }
 
 /*    /Register    */
 
-/*    Waiver    */
-
-.waiver-form {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.waiver-button {
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-/*    /Waiver    */
 
 /*    AboutUs    */
 
@@ -544,6 +509,8 @@ footer {
   border-top: 0.5px solid var(--color-accent);
   padding: 100px 0px;
   background-color: var(--color-primary);
+  position: relative;
+  z-index: 100;
 }
 
 .footer-content-div {
@@ -589,6 +556,18 @@ a.footer-links {
 
 a.footer-links:hover {
   color: var(--background-color);
+}
+@media screen and (max-width:1000px) {
+  .footer-socials-div {
+    width:100;
+  }
+  .footer-socials {
+    margin:0;
+  }
+  .footer-img-link {
+    margin:20px;
+  }
+  
 }
 
 /*    /Footer    */
