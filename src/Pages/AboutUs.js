@@ -1,5 +1,6 @@
 import React from 'react'
-import something from '../Images/placeholder.png'
+import photo1 from '../Images/TourneyImage.jpg'
+import photo2 from '../Images/TourneyImage.jpg'
 
 const AboutUs = () => {
     return (
@@ -16,8 +17,8 @@ const AboutUs = () => {
                     No more hoping for the “good coach” or following coaches from club to club.
                 </p>
             </div>
-            <img src={something} alt='' style={{ marginLeft: '5%' }} className='about-image' />
-            <img src={something} alt='' className='about-horizon' />
+            <img src={photo1} alt='' style={{ marginLeft: '5%' }} className='about-image' />
+            <img src={photo2} alt='' className='about-horizon' />
 
         </div>
     )

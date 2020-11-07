@@ -333,25 +333,36 @@ hr {
   z-index: 101;
 
   display: flex;
-  width:60%;
+  flex-wrap: wrap;
   margin:auto;
 }
 .faq-card {
   border-radius: 5px;
   margin:20px auto;
+  width:500px
 }
 .faq-title {
+  margin-top: 0;
   flex-basis: 100%;
   font-size: 30px;
 }
 .faq-text {
   font-size: 20px;
 }
-
+.faq-img {
+  position: relative;
+  left:-130px;
+  width:60px;
+}
 
 
 
 @media screen and (max-width: 1700px) {
+
+  .faq-card {
+  
+  }
+
   .fixed-home-div {
     display: none;
   }

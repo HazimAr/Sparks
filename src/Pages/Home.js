@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import Transparent from '../Images/Logos/Transparent-White.gif'
 import photo from '../Images/TourneyImage.jpg'
+import chat from '../Images/chat.svg'
 
 const Top = (props) => {
     return (
@@ -29,9 +30,9 @@ const Card = (props) => {
 
     return (
         <div className='faq-card'>
+            <img src={chat} className='faq-img' alt='' />
             <p className='faq-title'>{props.title}</p>
             <p className='faq-text'>{props.text}</p>
-
         </div>
     )
 }
