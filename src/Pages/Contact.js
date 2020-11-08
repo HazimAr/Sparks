@@ -8,9 +8,9 @@ init("user_dkvZZk4wFtUR8WzHQlJGa");
 const Contact = () => {
     const [userEmail, setUserEmail] = useState('');
     const [userMessage, setUserMessage] = useState('')
-
     const [userName, setUserName] = useState('');
     const [userPhone, setUserPhone] = useState('')
+    const [userSubject, setUserSubject] = useState('')
 
     const [errorMessage, setErrorMessage] = useState(' ')
 
@@ -27,18 +27,21 @@ const Contact = () => {
         setUserName('')
         setUserPhone('')
         setUserMessage('')
+        setUserSubject('')
     }
     const inValid = () => { // notify user message is inValid
         setErrorMessage('Please fill in all required fields')
     }
     const handleSubmit = function (e) {
         e.preventDefault()
-        if (validateEmail(userEmail) && userMessage !== '' && userName !== '' && userPhone !== '') {
+        if (validateEmail(userEmail) && userMessage !== '' && userName !== '' && userPhone !== '' && userSubject !== '') {
             emailjs.send(config.SERVICE, config.TEMPLATE, {
                 userEmail: userEmail,
                 userMessage: userMessage,
                 userName: userName,
                 userPhone: userPhone,
+                userSubject: userSubject,
+
             });
             messageSent()
         } else {
@@ -63,6 +66,9 @@ const Contact = () => {
 
                 <p className='label'>Phone Number *</p>
                 <input type="text" placeholder="111-111-1111" onChange={(e) => setUserPhone(e.target.value)} value={userPhone} />
+
+                <p className='label'>Subject *</p>
+                <input type="text" placeholder="Subject" onChange={(e) => setUserSubject(e.target.value)} value={userSubject} />
 
                 <p className='label'>Message *</p>
                 <textarea type="text" placeholder="Message" onChange={(e) => setUserMessage(e.target.value)} value={userMessage} style={{ height: '200px' }} />
