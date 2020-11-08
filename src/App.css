@@ -358,11 +358,6 @@ hr {
 
 
 @media screen and (max-width: 1700px) {
-
-  .faq-card {
-  
-  }
-
   .fixed-home-div {
     display: none;
   }
@@ -420,6 +415,7 @@ hr {
   font-weight: 600;
   margin: auto;
   padding: 50px 0;
+  flex-basis: 100%;
 }
 
 .page-text {
@@ -524,30 +520,46 @@ form {
 /*    AboutUs    */
 
 .about-div {
-  padding: 200px 0;
+  padding: 100px 0;
+  width:80%;
+  margin:auto;  
   display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  flex-direction: row;
   flex-wrap: wrap;
-}
-.about-image {
-  width: 700px;
-}
-
-@media screen and (max-width: 1600px) {
-  .about-image {
-    margin-top: 100px;
-  }
-  .about-div {
-    flex-direction: column;
-  }
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.about-horizon {
-  margin-top: 100px;
-  width: 700px;
+.about-p {
+  width:700px;
+  font-size: 20px;
+}
+
+.about-vert {
+  width:400px;
+}
+
+.about-register-div {
+  background-color: var(--color-primary);
+  padding:100px 0;
+}
+
+.about-register-card {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-register-img {
+  width:600px;
+}
+
+.about-register-title {
+  font-size: 40px;
+}
+
+.about-register-text {
+  width:600px;
+  font-size: 20px;
+  padding-bottom: 20px;
 }
 
 /*    /AboutUs    */
@@ -559,7 +571,7 @@ footer {
   padding: 100px 0px;
   background-color: var(--color-primary);
   position: relative;
-  z-index: 100;
+  z-index: 5;
 }
 
 .footer-content-div {
