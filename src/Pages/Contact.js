@@ -55,8 +55,7 @@ const Contact = () => {
             <a className='contact-links' href="mailto:SparksVolleyBallClub@gmail.com">SparksVolleyBallClub@gmail.com</a>
             <p />
             <a className='contact-links' href="tel:7025029462">(702) 502-9462</a>
-            <p>Las Vegas, Nevada</p>
-
+            <p>N. Las Vegas, NV 89032</p>
             <form className='contact-form' onSubmit={handleSubmit}>
                 <div className='contact-column'>
                     <p className='label'>Name *</p>
