@@ -38,16 +38,16 @@ const NavBar = () => {
             <header id='header'>
                 <div className='nav-link-div'>
                     <NavLink to='/' className='nav-link' exact activeStyle={{ fontSize: "30px" }}>Home</NavLink>
-                    <NavLink to='/register' className='nav-link' activeStyle={{ fontSize: "30px" }}>Register</NavLink>
                     <NavLink to='/about' className='nav-link' activeStyle={{ fontSize: "30px" }}>About Us</NavLink>
+                    <NavLink to='/register' className='nav-link' activeStyle={{ fontSize: "30px" }}>Register</NavLink>
                     <NavLink to='/contact' className='nav-link' activeStyle={{ fontSize: "30px" }}>Contact Us</NavLink>
                 </div>
 
                 <div id="dropdown-div">
                     <div className='nav-drop-ouside' onClick={destroy} />
                     <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/" onClick={destroy}>Home</NavLink>
-                    <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/register" onClick={destroy}>Register</NavLink>
                     <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/about" onClick={destroy}>About Us</NavLink>
+                    <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/register" onClick={destroy}>Register</NavLink>
                     <NavLink exact activeClassName='header-link-active' className="dropdown-link" to="/contact" onClick={destroy}>Contact Us</NavLink>
                 </div>
                 <img src={Menu} className="menu-logo" onClick={destroy} alt='' />
