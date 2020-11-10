@@ -485,12 +485,12 @@ input[type="submit"] {
   font-size: 20px;
   color: var(--color-light);
   padding: 14px 20px;
-  margin: 0px auto;
   border: solid white;
   border-width: 3px;
   border-radius: 4px;
   transition: all ease-in-out 0.3s;
   outline-width: 0;
+  margin:auto;
 }
 
 input[type="submit"]:hover {
@@ -530,7 +530,10 @@ form {
     width:100%;
   }
 }
-
+p {
+  width:fit-content;
+  margin:auto;
+}
 .contact-links{
   text-decoration: none;
   font-style: italic;
@@ -546,7 +549,6 @@ form {
 
 .register-form {
   padding-top: 150px;
-  padding-bottom: 200px;
 }
 
 /*    /Register    */

@@ -74,7 +74,7 @@ const Contact = () => {
                 <p className='label' id='messageLabel'>Message *</p>
                 <textarea type="text" placeholder="Message" onChange={(e) => setUserMessage(e.target.value)} value={userMessage} style={{ height: '200px' }} />
                 <input type="submit" value="SUBMIT" />
-                <p>{errorMessage}<br /></p>
+                <p style={{flexBasis:'100%'}}>{errorMessage}<br /></p>
             </form>
         </div>
     )

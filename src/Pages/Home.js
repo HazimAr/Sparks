@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
 import Transparent from '../Images/Logos/Transparent-White.gif'
 import photo from '../Images/TourneyImage.jpg'
 import chat from '../Images/chat.svg'
@@ -19,7 +18,7 @@ const Top = (props) => {
                         and leadership development for each athlete.
                         SVBC will provide the maximum opportunity for each athlete to train and compete at their highest level.
                     </p>
-                    <NavLink to='/about' className='home-button'>About Us</NavLink>
+                    <p className='home-button'>About Us</p>
                 </div>
             </div>
         </div >
@@ -67,7 +66,7 @@ const Home = () => {
                         <br /><br />
                         No more hoping for the “good coach” or following coaches from club to club.</p>
 
-                    <NavLink to='/register' className='home-button'>Register Now!</NavLink>
+                    <p className='home-button'>Register Now!</p>
                 </div>
                 <img src={photo} alt='' className='home-triangle-image' />
             </div>
