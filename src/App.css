@@ -251,15 +251,7 @@ header {
   align-items: center;
 }
 
-@keyframes slideLogo {
-  from {
-    left: -500px;
-  }
 
-  to {
-    left: 0px;
-  }
-}
 
 .home-logo {
   width: 900px;
@@ -267,7 +259,7 @@ header {
   z-index: 4;
   transition: all ease-in-out 0.5s;
   position: relative;
-  animation: slideLogo 1s;
+
 }
 
 .home-section {
