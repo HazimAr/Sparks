@@ -20,7 +20,7 @@
 }
 
 ::selection {
-  background:  #1f1f1f;
+  background: #1f1f1f;
   color: white;
 }
 
@@ -182,7 +182,6 @@ header {
   }
 }
 
-
 @keyframes onLoad {
   from {
     height: 100vh;
@@ -219,13 +218,13 @@ header {
 
 .fixed-home-div {
   position: fixed;
-  top:0;
-  left:0;
-  width:100%;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .relative-home-div {
-  visibility: hidden!important;
+  visibility: hidden !important;
 }
 
 #home-dark {
@@ -252,12 +251,23 @@ header {
   align-items: center;
 }
 
+@keyframes slideLogo {
+  from {
+    left: -500px;
+  }
+
+  to {
+    left: 0px;
+  }
+}
+
 .home-logo {
   width: 900px;
   border-radius: 10px;
   z-index: 4;
   transition: all ease-in-out 0.5s;
   position: relative;
+  animation: slideLogo 1s;
 }
 
 .home-section {
@@ -273,7 +283,6 @@ header {
 .home-section:hover {
   box-shadow: 43px 43px 15px rgb(0, 0, 0, 0.8);
 }
-
 
 #home-dark-section {
   box-shadow: -30px 30px 10px rgb(0, 0, 0, 0.65);
@@ -315,17 +324,17 @@ hr {
   background-color: var(--color-accent-2);
 }
 
-
 .home-triangle-image {
   width: 900px;
-  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.1)));
+  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right
+        bottom, from(transparent), color-stop(70%, transparent), to(rgba(255, 255, 255, 0.1)));
 }
 
 .home-faq-div {
   background-color: var(--background-color);
   position: relative;
   z-index: 101;
-  padding:50px 0;
+  padding: 50px 0;
   padding-bottom: 100px;
 }
 .home-faq-card-div {
@@ -334,12 +343,12 @@ hr {
 
   display: flex;
   flex-wrap: wrap;
-  margin:auto;
+  margin: auto;
 }
 .faq-card {
   border-radius: 5px;
-  margin:20px auto;
-  width:500px
+  margin: 20px auto;
+  width: 500px;
 }
 .faq-title {
   margin-top: 0;
@@ -351,18 +360,16 @@ hr {
 }
 .faq-img {
   position: relative;
-  left:-130px;
-  width:60px;
+  left: -130px;
+  width: 60px;
 }
-
-
 
 @media screen and (max-width: 1700px) {
   .fixed-home-div {
     display: none;
   }
   .relative-home-div {
-    visibility: visible!important;
+    visibility: visible !important;
   }
   .home-div {
     flex-direction: column;
@@ -403,7 +410,6 @@ hr {
   }
 }
 
-
 /*    /Home    */
 
 /*    Contact    */
@@ -427,7 +433,8 @@ hr {
   padding: 50px 0;
 }
 
-input[type="text"], select {
+input[type="text"],
+select {
   width: 95%;
   padding: 15px 20px;
   margin: 0;
@@ -467,7 +474,7 @@ textarea {
 .labelRight {
   text-align: left;
   margin: 5px 0;
-  margin-left:5%;
+  margin-left: 5%;
   color: white;
 }
 #messageLabel {
@@ -475,8 +482,8 @@ textarea {
 }
 
 .contact-column {
-  width:50%;
-  display:flex;
+  width: 50%;
+  display: flex;
   flex-direction: column;
 }
 
@@ -490,7 +497,7 @@ input[type="submit"] {
   border-radius: 4px;
   transition: all ease-in-out 0.3s;
   outline-width: 0;
-  margin:auto;
+  margin: auto;
 }
 
 input[type="submit"]:hover {
@@ -506,10 +513,9 @@ form {
   padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
-  
 }
 #rightColInput {
-  margin-left:auto;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 800px) {
@@ -518,29 +524,30 @@ form {
     flex-direction: column;
   }
   #rightColInput {
-    margin-left:unset;
+    margin-left: unset;
   }
   .labelRight {
     margin-left: unset;
   }
-  input[type="text"], select {
-    width:100%;
+  input[type="text"],
+  select {
+    width: 100%;
   }
   .contact-column {
-    width:100%;
+    width: 100%;
   }
 }
 p {
-  width:fit-content;
-  margin:auto;
+  width: fit-content;
+  margin: auto;
 }
-.contact-links{
+.contact-links {
   text-decoration: none;
   font-style: italic;
   color: var(--color-light);
 }
 .contact-links:hover {
-  color:var(--color-accent-2);
+  color: var(--color-accent-2);
 }
 
 /*    /Contact    */
@@ -553,13 +560,12 @@ p {
 
 /*    /Register    */
 
-
 /*    AboutUs    */
 
 .about-div {
   padding: 100px 0;
-  width:80%;
-  margin:auto;  
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -567,17 +573,17 @@ p {
 }
 
 .about-p {
-  width:700px;
+  width: 700px;
   font-size: 20px;
 }
 
 .about-vert {
-  width:400px;
+  width: 400px;
 }
 
 .about-register-div {
   background-color: var(--color-primary);
-  padding:100px 0;
+  padding: 100px 0;
 }
 
 .about-register-card {
@@ -586,7 +592,7 @@ p {
 }
 
 .about-register-img {
-  width:600px;
+  width: 600px;
 }
 
 .about-register-title {
@@ -594,7 +600,7 @@ p {
 }
 
 .about-register-text {
-  width:600px;
+  width: 600px;
   font-size: 20px;
   padding-bottom: 20px;
 }
@@ -655,17 +661,16 @@ a.footer-links {
 a.footer-links:hover {
   color: var(--background-color);
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
   .footer-socials-div {
-    width:100;
+    width: 100;
   }
   .footer-socials {
-    margin:0;
+    margin: 0;
   }
   .footer-img-link {
-    margin:20px;
+    margin: 20px;
   }
-  
 }
 
 /*    /Footer    */
