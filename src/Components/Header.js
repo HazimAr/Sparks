@@ -83,7 +83,7 @@ export default function Header() {
         return [
             <p className='header-name'></p>,
             <div className='header-links-div'>
-                <a href='/#' onClick={scrollToTop} className='header-link'>Home</a>
+                <a href='/' onClick={scrollToTop} className='header-link'>Home</a>
                 <a href='/#about' onClick={scrollToAboutUs} className='header-link'>About Us</a>
                 <a href='/register' className='header-link' id='header-register'>Register</a>
                 <a href='/#faq' onClick={scrollToContact} className='header-link'>Contact</a>
