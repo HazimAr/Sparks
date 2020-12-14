@@ -45,7 +45,7 @@ function Faq() {
                 id='faq-right'
                 image={trendingUp}
                 title='What do club fees cover?'
-                text='Club fees cover everything you will need to be successful, including but not limited to education, certifications, uniforms, practices, tournaments, specialty training, administrative costs, travel transportation and lodging.' />
+                text='Club fees cover everything you will need to be successful, including but not limited to education, certifications, uniforms, practices, tournaments, specialty training, administrative costs, travel transportation, and lodging.' />
         </div>
     )
 }
