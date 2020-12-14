@@ -35,7 +35,7 @@ function Faq() {
                 id='faq-left'
                 image={sky}
                 title='What sets Sparks apart from other teams?'
-                text='Sparks Volley Ball Club was founded on the core belief of teaching life leasons through the sport of volleyball. We have some of the most experienced and sought after coaches in the region. Our state of the art 17,000 square foot faculity is equiped with the latest volleyball training equipment.' />
+                text='Sparks Volley Ball Club was founded on the core belief of teaching life lessons through the sport of volleyball. We have some of the most experienced and sought after coaches in the region. Our state of the art 17,000 square foot facility is equipped with the latest volleyball training equipment' />
             <FaqSection
                 id='faq-middle'
                 image={graph}
@@ -45,7 +45,7 @@ function Faq() {
                 id='faq-right'
                 image={trendingUp}
                 title='What do club fees cover?'
-                text='Club fees cover everything you will need to be succesful, including but not limited to education, certitifactions, uniforms, practices, tournaments, specialty training, administrative costs, travel transportaion and lodging,' />
+                text='Club fees cover everything you will need to be successful, including but not limited to education, certifications, uniforms, practices, tournaments, specialty training, administrative costs, travel transportation and lodging.' />
         </div>
     )
 }

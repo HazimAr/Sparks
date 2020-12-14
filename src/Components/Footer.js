@@ -9,7 +9,8 @@ export default function Footer() {
             <p className='footer-text'>
                 SparksVolleyBallClub@gmail.com<br />
                 (702) 502-9462<br />
-                3778 W. Cheyenne Ave STE 120 N. Las Vegas, NV 89032<br />
+                3778 W. Cheyenne Ave STE 120 <br /> 
+                N. Las Vegas, NV 89032<br />
             </p>
             <div className='footer-socials-div'>
                 <a href='https://www.facebook.com/SparksVBCLV' target="_blank" rel="noreferrer noopener" className='footer-img-link'><img src={facebook} alt='' className='footer-socials' /></a>
