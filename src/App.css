@@ -171,8 +171,8 @@ header {
 }
 
 #header-register {
-  border-radius: 20px;
-  padding: 8px;
+  border-radius: 1000px;
+  padding: 9px;
   background-color: #9e2d2d;
   color: white;
 }
