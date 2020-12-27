@@ -573,6 +573,7 @@ footer {
   transition: all ease-in-out 0.3s;
   padding: 2px;
   background-color: var(--color-primary);
+  margin: 0px 30px;
 }
 
 .footer-socials:hover {
@@ -581,7 +582,7 @@ footer {
 
 .footer-socials-div {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   max-width: 600px;
   margin: auto;
 }
