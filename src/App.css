@@ -300,6 +300,12 @@ h1 {
   }
 }
 
+@media screen and (max-width:300px) {
+  .intro-img {
+    width: 250px;
+  }
+}
+
 /*     Contact    */
 
 .contact-outside-div {
@@ -582,10 +588,20 @@ footer {
 
 .footer-socials-div {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   max-width: 600px;
   margin: auto;
 }
+
+/* @media screen and (max-width:300px) {
+  .footer-socials-div {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+  }
+} */
 
 .FourZeroFour-div {
   background-color: rgb(58, 211, 170);
