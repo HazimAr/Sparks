@@ -139,7 +139,7 @@ header {
   display: flex;
   width: 90%;
   z-index: 100;
-  padding: 20px 5%;
+  padding: 10px 5%;
   background-color: var(--color-primary);
   color: var(--font-color-o);
 }
@@ -147,7 +147,6 @@ header {
 #drop-header {
   background-color: var(--color-accent);
   position: fixed;
-  padding: 20px 5%;
   display: none;
   color: var(--font-color);
   box-shadow: rgb(0, 0, 0, 0.3) 0px 13px 29px;
@@ -302,7 +301,8 @@ h1 {
 
 @media screen and (max-width:300px) {
   .intro-img {
-    width: 2 50px;
+    width: 250px;
+    top:auto;
   }
 }
 

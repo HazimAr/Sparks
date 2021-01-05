@@ -7,6 +7,7 @@ import Header from './Components/Header'
 import Footer from './Components/Footer'
 import FourOFour from './Components/Main/404'
 import Regis from './Components/Main/Temp'
+import EasterEgg from './Components/Main/easteregg.js'
 
 import Contact from './Components/Main/Contact'
 import Faq from './Components/Main/Faq'
@@ -88,6 +89,9 @@ function App() {
         <Header />
         <Regis />
         <Footer />
+      </Route>
+      <Route path='/imgbruh'>
+        <EasterEgg />
       </Route>
       <Route path="" component={FourOFour} />
     </Switch>
