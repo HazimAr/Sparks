@@ -55,3 +55,5 @@ export default function Main() {
         <Faq />
     ]
 }
+
+// Cyborg is kinda gay not gonna lie bitch
