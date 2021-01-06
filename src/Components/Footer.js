@@ -17,7 +17,7 @@ export default function Footer() {
                 <a href='https://www.instagram.com/sparks_vbc_lv/' target="_blank" rel="noreferrer noopener" className='footer-img-link'><img src={insta} alt='' className='footer-socials' /></a>
                 <a href='https://www.youtube.com/channel/UCrUowRgcYRZif4HXd9RgO4A' target="_blank" rel="noreferrer noopener" className='footer-img-link'><img src={youtube} alt='' className='footer-socials' /></a>
             </div>
-            <p className='footer-copyright-text'>© 2020 <span className='footer-copyright-name'>Sparks Volleyball Club</span></p>
+            <p className='footer-copyright-text'>© 2021 <span className='footer-copyright-name'>Sparks Volleyball Club</span></p>
         </footer>
     )
 }
