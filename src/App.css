@@ -221,8 +221,9 @@ h1 {
 }
 
 .intro-inside-div {
-  display: flex; 
+  display: flex;
   max-width: 1000px;
+  width: 100%;
   margin: auto;
   justify-content: space-between;
   align-items: center;
@@ -260,7 +261,7 @@ h1 {
 
 .intro-img {
   visibility: hidden;
-  width: 800px;
+  width: 700px;
   position: relative;
   animation: slideFromRight 2s 0.5s forwards;
 }
@@ -281,6 +282,12 @@ h1 {
 .intro-button:hover {
   background-color: #e0e0e0;
   cursor: pointer;
+}
+
+@media screen and (max-width:1500px) {
+  .intro-img {
+    width: 675px;
+  }
 }
 
 @media screen and (max-width:1150px) {

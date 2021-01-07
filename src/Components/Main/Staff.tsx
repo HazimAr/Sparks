@@ -5,7 +5,6 @@ interface staff {
     img:any,
     name:string,
     role:string,
-    description:string
 }
 
 const staffData: staff[] = [
@@ -13,37 +12,31 @@ const staffData: staff[] = [
     img: placeholder,
     name: "Hazim",
     role: "Web Developer",
-    description: "Designer and Developer for the Sparks website",
   },
   {
     img: placeholder,
     name: "Karim",
     role: "Head Coach",
-    description: "Lorem Ipsum a;fsdljkfad;sklj dfsa;lkja;dlsfkjlkjdf;sa",
   },
   {
     img: placeholder,
     name: "Kenzy",
     role: "Co-Club Director",
-    description: "Lorem Ipsum a;fsdljkfad;sklj dfsa;lkja;dlsfkjlkjdf;sa",
   },
   {
     img: placeholder,
     name: "Tameem",
     role: "Co-Club Director",
-    description: "Lorem Ipsum a;fsdljkfad;sklj dfsa;lkja;dlsfkjlkjdf;sa",
     },
   {
     img: placeholder,
     name: "Tameem",
     role: "Co-Club Director",
-    description: "Lorem Ipsum a;fsdljkfad;sklj dfsa;lkja;dlsfkjlkjdf;sa",
     },
   {
     img: placeholder,
     name: "Tameem",
     role: "Co-Club Director",
-    description: "Lorem Ipsum a;fsdljkfad;sklj dfsa;lkja;dlsfkjlkjdf;sa",
   },
 ];
 
@@ -54,7 +47,6 @@ function StaffCard(data: staff) {
       <div>
         <h2>{data.name}</h2>
         <h4>{data.role}</h4>
-        <p>{data.description}</p>
       </div>
     </div>
   );
