@@ -1,4 +1,5 @@
 import React from 'react'
+import placeholder from '../../Images/Hazimos.png'
 
 interface staff {
     img:any,
@@ -9,26 +10,38 @@ interface staff {
 
 const staffData: staff[] = [
   {
-    img: "",
-    name: "Name",
-    role: "Loram Insum",
-    description: "Lorem Ipsum a;fsdljkfad;sklj dfsa;lkja;dlsfkjlkjdf;sa",
+    img: placeholder,
+    name: "Hazim",
+    role: "Web Developer",
+    description: "Designer and Developer for the Sparks website",
   },
   {
-    img: "",
+    img: placeholder,
     name: "Karim",
-    role: "Coach",
+    role: "Head Coach",
     description: "Lorem Ipsum a;fsdljkfad;sklj dfsa;lkja;dlsfkjlkjdf;sa",
   },
   {
-    img: "",
-    name: "Shymaa",
+    img: placeholder,
+    name: "Kenzy",
     role: "Co-Club Director",
     description: "Lorem Ipsum a;fsdljkfad;sklj dfsa;lkja;dlsfkjlkjdf;sa",
   },
   {
-    img: "",
-    name: "Moose",
+    img: placeholder,
+    name: "Tameem",
+    role: "Co-Club Director",
+    description: "Lorem Ipsum a;fsdljkfad;sklj dfsa;lkja;dlsfkjlkjdf;sa",
+    },
+  {
+    img: placeholder,
+    name: "Tameem",
+    role: "Co-Club Director",
+    description: "Lorem Ipsum a;fsdljkfad;sklj dfsa;lkja;dlsfkjlkjdf;sa",
+    },
+  {
+    img: placeholder,
+    name: "Tameem",
     role: "Co-Club Director",
     description: "Lorem Ipsum a;fsdljkfad;sklj dfsa;lkja;dlsfkjlkjdf;sa",
   },
@@ -39,7 +52,7 @@ function StaffCard(data: staff) {
     <div className='staff-div'>
       <img src={data.img} alt={data.name} />
       <div>
-        <h3>{data.name}</h3>
+        <h2>{data.name}</h2>
         <h4>{data.role}</h4>
         <p>{data.description}</p>
       </div>
@@ -50,7 +63,7 @@ function StaffCard(data: staff) {
 export default function Staff() {
     return (
       <div>
-        <p> hi this staff lol </p>
+        <h1> SVC Staff </h1>
         <div className='staff-div-div'>{staffData.map((data) => StaffCard(data))}</div>
       </div>
     );

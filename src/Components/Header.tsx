@@ -59,6 +59,7 @@ function HeaderDropDown() {
                     <a href='/#' onClick={function () { scrollToTop(); invertDropDownMenu() }}>Home</a>
                     <a href='/#about' onClick={function () { invertDropDownMenu(); scrollToAboutUs() }}>About Us</a>
                     <a href='/register' onClick={invertDropDownMenu}>Register</a>
+                    {/* <a href='/staff' className='header-link' id='header-link'>Staff</a> */}
                     <a href='/#faq' onClick={function () { invertDropDownMenu(); scrollToContact() }}>Contact</a>
                 </div>
             </div>
@@ -86,7 +87,7 @@ export default function Header() {
                 <a href='/' onClick={scrollToTop} className='header-link'>Home</a>
                 <a href='/#about' onClick={scrollToAboutUs} className='header-link'>About Us</a>
                 <a href='/register' className='header-link' id='header-register'>Register</a>
-                <a href='/staff' className='header-link' id='header-link'>Staff</a>
+                {/* <a href='/staff' className='header-link' id='header-link'>Staff</a> */}
                 <a href='/#faq' onClick={scrollToContact} className='header-link'>Contact</a>
             </div>,
             <svg onClick={invertDropDownMenu} className='header-menu-img' xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" strokeWidth="1.5" stroke={props.menuColor} fill="none" strokeLinecap="round" strokeLinejoin="round">
