@@ -161,18 +161,26 @@ header {
 
 .header-link {
   margin: auto;
+  padding: 9px;
   font-size: 20.5px;
   transition: all ease-in-out 0.3s;
 }
 
 .header-link:hover {
-  font-size: 24px;
+  border-radius: 100px;
+  background-color: var(--color-dark);
+  color: white;
 }
 
 #header-register {
   border-radius: 1000px;
   padding: 9px;
-  background-color: #9e2d2d;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+#header-register:hover {
+  background-color: var(--color-dark);
   color: white;
 }
 
