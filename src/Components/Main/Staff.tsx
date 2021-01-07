@@ -43,7 +43,7 @@ const staffData: staff[] = [
 function StaffCard(data: staff) {
   return (
     <div className='staff-div'>
-      <img src={data.img} alt={data.name} />
+      <img className='staff-img'src={data.img} alt={data.name} />
       <div>
         <h2>{data.name}</h2>
         <h4>{data.role}</h4>
@@ -55,7 +55,7 @@ function StaffCard(data: staff) {
 export default function Staff() {
     return (
       <div>
-        <h1> SVC Staff </h1>
+        <h1> SVBC Staff </h1>
         <div className='staff-div-div'>{staffData.map((data) => StaffCard(data))}</div>
       </div>
     );

@@ -261,7 +261,7 @@ h1 {
 
 .intro-img {
   visibility: hidden;
-  width: 700px;
+  width: 900px;
   position: relative;
   animation: slideFromRight 2s 0.5s forwards;
 }
@@ -282,6 +282,12 @@ h1 {
 .intro-button:hover {
   background-color: #e0e0e0;
   cursor: pointer;
+}
+
+@media screen and (max-width:1700px) {
+  .intro-img {
+    width: 775px;
+  }
 }
 
 @media screen and (max-width:1500px) {
@@ -676,6 +682,8 @@ footer {
 .staff-div:hover {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  transform: scale(1.05);
+  transition: ease-in-out 0.25s;
 }
 
 .staff-div img {
