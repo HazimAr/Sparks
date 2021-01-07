@@ -221,8 +221,7 @@ h1 {
 }
 
 .intro-inside-div {
-  display: flex;
-  width: 70%;
+  display: flex; 
   max-width: 1000px;
   margin: auto;
   justify-content: space-between;
