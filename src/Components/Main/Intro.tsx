@@ -22,7 +22,7 @@ function Intro() {
     )
 }
 function About() {
-    function AboutSection(props) {
+    function AboutSection(props: any) {
         return (
             <div id={props.id} className='about-section'>
                 <img className='about-img' alt='' src={props.image} />
@@ -31,7 +31,7 @@ function About() {
             </div>
         )
     }
-    function AboutRow(props) {
+    function AboutRow(props: any) {
         return (
             <div style={{ flexDirection: props.flex }} className='about-row'>
                 <img className='about-team-logo' id={props.imageID} src={props.image} alt='' />
@@ -55,7 +55,7 @@ function About() {
         </div>
     )
 }
-export default function introAbout() {
+export default function introAbout():any {
     return [
         <Intro />,
         <About />

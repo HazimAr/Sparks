@@ -1,8 +1,8 @@
 import React from 'react'
 import { checkAll } from '../index'
-function scroll(offset, id) {
+function scroll(offset: any, id: any) {
     const yOffset = offset;
-    const element = document.getElementById(id);
+    const element: any = document.getElementById(id);
     const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
     window.scrollTo({ top: y, behavior: 'smooth' });
 }
@@ -34,7 +34,7 @@ export function scrollToRegister() {
 }
 let isActive = false;
 function invertDropDownMenu() {
-    const element = document.getElementById('dropdown')
+    const element: any = document.getElementById('dropdown')
     if (isActive) {
         element.style.animation = 'dropExpand 1s forwards'
         isActive = false
@@ -66,7 +66,7 @@ function HeaderDropDown() {
     )
 }
 export function checkHeader() {
-    const header = document.getElementById('drop-header')
+    const header: any = document.getElementById('drop-header')
     try {
         if (window.scrollY > 100) {
             header.style.animation = 'headerComeIn 1s forwards'
@@ -79,13 +79,14 @@ export function checkHeader() {
     catch { }
 }
 export default function Header() {
-    function HeaderContent(props) {
+    function HeaderContent(props: any):any {
         return [
             <p className='header-name'></p>,
             <div className='header-links-div'>
                 <a href='/' onClick={scrollToTop} className='header-link'>Home</a>
                 <a href='/#about' onClick={scrollToAboutUs} className='header-link'>About Us</a>
                 <a href='/register' className='header-link' id='header-register'>Register</a>
+                <a href='/staff' className='header-link' id='header-link'>Staff</a>
                 <a href='/#faq' onClick={scrollToContact} className='header-link'>Contact</a>
             </div>,
             <svg onClick={invertDropDownMenu} className='header-menu-img' xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" strokeWidth="1.5" stroke={props.menuColor} fill="none" strokeLinecap="round" strokeLinejoin="round">

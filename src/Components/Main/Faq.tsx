@@ -19,7 +19,7 @@ function Register() {
     )
 }
 function Faq() {
-    function FaqSection(props) {
+    function FaqSection(props: any) {
         return (
             <div className='faq-section' key={props.id} id={props.id}>
                 <img className='faq-img' alt='' src={props.image} />
@@ -49,11 +49,6 @@ function Faq() {
         </div>
     )
 }
-export default function Main() {
-    return [
-        <Register />,
-        <Faq />
-    ]
+export default function Main(): any {
+  return [<Register />, <Faq />];
 }
-
-// Cyborg is kinda gay not gonna lie bitch

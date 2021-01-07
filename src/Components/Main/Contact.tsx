@@ -26,7 +26,7 @@ export default function Contact() {
         alert('Please fill in all required fields')
     }
 
-    const handleSubmit = function (e) {
+    const handleSubmit = function (e: any) {
         e.preventDefault();
         if (name !== '' && phone !== '' && email !== '' && subject !== '') {
             emailjs.send(config.SERVICE, config.TEMPLATE, {
