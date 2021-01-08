@@ -1,5 +1,6 @@
 import React from 'react'
 import placeholder from '../../Images/Hazimos.png'
+import twomad from '../../Images/twomad.jpg'
 
 interface staff {
     img:any,
@@ -25,17 +26,32 @@ const staffData: staff[] = [
   },
   {
     img: placeholder,
-    name: "Tameem",
+    name: "Corps",
+    role: "Co-Club Director",
+    },
+  {
+    img: twomad,
+    name: "twomad",
     role: "Co-Club Director",
     },
   {
     img: placeholder,
-    name: "Tameem",
+    name: "Syk",
     role: "Co-Club Director",
-    },
+  },
   {
     img: placeholder,
-    name: "Tameem",
+    name: "Bevenzo",
+    role: "Co-Club Director",
+  },
+  {
+    img: placeholder,
+    name: "Dice",
+    role: "Co-Club Director",
+  },
+  {
+    img: placeholder,
+    name: "Clem",
     role: "Co-Club Director",
   },
 ];
