@@ -313,6 +313,36 @@ h1 {
   }
 }
 
+@media screen and (max-height:930px) {
+  .intro-img {
+    width: 800px;
+  }
+}
+
+@media screen and (max-height:825px) {
+  .intro-img {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width:1150px) {
+  .intro-img {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .intro-img {
+    width: 550px;
+  }
+}
+
+@media screen and (max-height:775px) {
+  .intro-img {
+    width: 650px;
+  }
+}
+
 @media screen and (max-width:550px) {
   .intro-img {
     width: 450px;
