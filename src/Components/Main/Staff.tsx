@@ -1,6 +1,8 @@
 import React from 'react'
 import placeholder from '../../Images/Hazimos.png'
 import twomad from '../../Images/twomad.jpg'
+import Andrew from '../../Images/AndrewIsGay.png'
+import free_Melly from '../../Images/free_Melly.jpg'
 
 interface staff {
     img:any,
@@ -25,8 +27,8 @@ const staffData: staff[] = [
     role: "Co-Club Director",
   },
   {
-    img: placeholder,
-    name: "Corps",
+    img: Andrew,
+    name: "Andrew",
     role: "Co-Club Director",
     },
   {
@@ -35,8 +37,8 @@ const staffData: staff[] = [
     role: "Co-Club Director",
     },
   {
-    img: placeholder,
-    name: "Syk",
+    img: free_Melly,
+    name: "Mom",
     role: "Co-Club Director",
   },
   {
