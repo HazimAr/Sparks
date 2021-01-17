@@ -27,17 +27,17 @@ const staffData: staff[] = [
     role: "Co-Club Director",
   },
   {
-    img: Andrew,
+    img: placeholder,
     name: "Andrew",
     role: "Co-Club Director",
     },
   {
-    img: twomad,
+    img: placeholder,
     name: "twomad",
     role: "Co-Club Director",
     },
   {
-    img: free_Melly,
+    img: placeholder,
     name: "Mom",
     role: "Co-Club Director",
   },
