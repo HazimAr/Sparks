@@ -49,7 +49,7 @@ const staffData: staff[] = [
   {
     img: placeholder,
     name: "Dice",
-    role: "Co-Club Director",
+    role: "Grand Champ in rocket league",
   },
   {
     img: placeholder,
