@@ -1,5 +1,8 @@
 import React from 'react'
 import placeholder from '../../Images/Hazimos.png'
+import twomad from '../../Images/twomad.jpg'
+import Andrew from '../../Images/AndrewIsGay.png'
+import free_Melly from '../../Images/free_Melly.jpg'
 
 interface staff {
     img:any,
