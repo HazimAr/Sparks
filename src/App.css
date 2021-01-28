@@ -90,7 +90,7 @@ a {
 .dropdown-body {
   background-color: var(--color-accent);
   position: relative;
-  width: 75vw;
+  width: 50vw;
 }
 
 .drop-header-div {
