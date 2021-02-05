@@ -18,7 +18,7 @@ export default function Footer() {
                 <a href='https://www.youtube.com/channel/UCrUowRgcYRZif4HXd9RgO4A' target="_blank" rel="noreferrer noopener" className='footer-img-link'><img src={youtube} alt='' className='footer-socials' /></a>
             </div>
             <p className='footer-copyright-text'>© 2021 <span className='footer-copyright-name'>Sparks Volleyball Club</span></p>
-            <a href="https://webdefyer.com" target="_blank" rel="noreferrer">Developed by: <span style={{color: 'var(--color-primary)'}}>Webdefyer</span></a>
+            <a href="https://webdefyer.com" target="_blank" rel="noreferrer">Designed by: <span style={{color: 'var(--color-primary)'}}>Webdefyer</span></a>
         </footer>
     )
 }
