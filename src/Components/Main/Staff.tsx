@@ -14,7 +14,7 @@ const staffData: staff[] = [
   {
     img: placeholder,
     name: "Hazim",
-    role: "Web Developer",
+    role: "Web Designer",
   },
   {
     img: placeholder,
@@ -28,12 +28,12 @@ const staffData: staff[] = [
   },
   {
     img: placeholder,
-    name: "Andrew",
+    name: "Shymaa",
     role: "Co-Club Director",
     },
   {
     img: placeholder,
-    name: "twomad",
+    name: "Mom",
     role: "Co-Club Director",
     },
   {
@@ -43,17 +43,17 @@ const staffData: staff[] = [
   },
   {
     img: placeholder,
-    name: "Bevenzo",
+    name: "Mom",
     role: "Co-Club Director",
   },
   {
     img: placeholder,
-    name: "Dice",
-    role: "Grand Champ in rocket league",
+    name: "Mom",
+    role: "Co-Club Director",
   },
   {
     img: placeholder,
-    name: "Clem",
+    name: "Mom",
     role: "Co-Club Director",
   },
 ];
