@@ -1,4 +1,4 @@
-import React from 'react'
+
 import four0four from '../../Images/404.png'
 import tacodie from '../../Images/taco.gif'
 

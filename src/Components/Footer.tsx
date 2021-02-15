@@ -1,4 +1,4 @@
-import React from 'react'
+
 import facebook from '../Images/Sparks/facebook.svg'
 import insta from '../Images/Sparks/instagram.svg'
 import youtube from '../Images/Sparks/youtube.svg'

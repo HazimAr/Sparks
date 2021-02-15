@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Image from '../../Images/Sparks/8-22-2_Tourney-24.jpg'
 export default function Temp() {
     return (

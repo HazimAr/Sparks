@@ -1,4 +1,4 @@
-import React from 'react'
+
 import placeholder from '../../Images/Hazimos.png'
 
 interface staff {
